@@ -1,0 +1,9 @@
+Log de Caso de Prueba EAP_0020
+Tipo CPE: Factura
+Subtipo CPE: Cargo
+Tipo Cargo: No afectan a la base imponible del IGV/IVAP
+Seleccion tipo de documento
+URL: http://qaacepta2107.acepta.pe/v01/7F2B624B461BC6A8C7622AEB765114121B1F1EC8?k=2ca593f2c01f0c3668191f30eb93ef40
+Número de CPE: FHHH00000564
+Resultado: CPE Rechazado por la OSE, código de Error: 3025-El dato ingresado en factor de cargo o descuento global no cumple con el formato establecido..-
+ScreenShot de la traza

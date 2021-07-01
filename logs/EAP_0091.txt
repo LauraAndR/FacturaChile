@@ -1,0 +1,8 @@
+Log de Caso de Prueba EAP_0091
+Tipo CPE: Factura
+Subtipo CPE: Exportación
+URL: http://qaacepta2107.acepta.pe/v01/5D30B228D3208829C68F09E6B1395790FAD50B68?k=7ecf18ef69fc5df23e7d702a2fef829f
+Número de CPE: FP0100001321
+Resultado: La FACTURA FP01-00001321, ha sido OBSERVADO
+Debe consignar la informacion del tipo de transaccion del comprobante
+ScreenShot de la traza

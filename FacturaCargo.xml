@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite_FacturaCargo">
+  <test thread-count="5" name="Test_FacturaCargo">
+    <classes>
+      <class name="test.Tests_FacturaCargo"/>
+    </classes>
+  </test> <!-- Test_FacturaCargo -->
+</suite> <!-- Suite_FacturaCargo -->

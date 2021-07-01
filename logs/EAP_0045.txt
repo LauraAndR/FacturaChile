@@ -1,0 +1,5 @@
+Log de Caso de Prueba EAP_0045
+Tipo CPE: Boleta
+Subtipo CPE: Cargo
+Tipo Cargo: Si afectan a la base imponible del IGV/IVAP
+Seleccion tipo de documento

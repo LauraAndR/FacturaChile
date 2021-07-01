@@ -1,0 +1,7 @@
+Log de Caso de Prueba EAP_0065
+Tipo CPE: Nota Crédito
+Subtipo CPE: Afecta-Inafecta
+URL: http://qaacepta2107.acepta.pe/v01/1884FD16ABEE6871EDEF46AE66656C7FFC6EA22D?k=6afadd9125522e112cb94d47111f2f58
+Número de CPE: FHHH00000089
+Resultado: CPE Rechazado por la OSE, código de Error: 2119-El documento modificado en la Nota de credito no esta registrada..-
+ScreenShot de la traza

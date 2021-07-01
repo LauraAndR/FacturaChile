@@ -1,0 +1,10 @@
+Log de Caso de Prueba EAP_0038
+Tipo CPE: Factura
+Subtipo CPE: Inafecta Gratuita
+Tipo Operacion SUNAT: Retiro por publicidad
+Seleccion tipo de documento
+URL: http://qaacepta2107.acepta.pe/v01/0E7975F8248F105E78984D721FA05FAAA5AEC70D?k=d70b3bce7363d89abd745680a4c7f38c
+Número de CPE: FHHH00000549
+Resultado: La FACTURA FHHH-00000549, ha sido OBSERVADO
+Debe consignar la informacion del tipo de transaccion del comprobante
+ScreenShot de la traza

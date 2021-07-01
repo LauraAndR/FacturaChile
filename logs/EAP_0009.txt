@@ -1,0 +1,8 @@
+Log de Caso de Prueba EAP_0009
+Tipo CPE: Factura
+Subtipo CPE: Exportación Gratuita
+URL: http://qaacepta2107.acepta.pe/v01/1399E22D92DBDEF6C3789E374F21972A9CB6D468?k=ad6a99ac3c475b8e0e2a17ca0c8d546f
+Número de CPE: FHHH00000543
+Resultado: La FACTURA FHHH-00000543, ha sido OBSERVADO
+El Código producto de SUNAT no es válido
+ScreenShot de la traza

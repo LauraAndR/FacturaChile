@@ -1,0 +1,8 @@
+Log de Caso de Prueba EAP_0052
+Tipo CPE: Boleta
+Subtipo CPE: Afecta-Inafecta
+Seleccion tipo de documento
+URL: http://qaacepta2107.acepta.pe/v01/F0E353D6B6223ACA2A3D4B3ACFB7F95CEE7BA7C5?k=dadce5c1699e3a0fcda1b87625586b33
+Número de CPE: BHHH00000293
+Resultado: La BOLETA BHHH-00000293, ha sido ACEPTADO
+ScreenShot de la traza

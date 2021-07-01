@@ -1,0 +1,7 @@
+Log de Caso de Prueba EAP_0071
+Tipo CPE: Nota Crédito
+Subtipo CPE: Exonerada
+URL: http://qaacepta2107.acepta.pe/v01/C7D3EB0B890B750CE8E3D3B3B36971A02C0881CB?k=cd46bc0741a02c5351281b20c1f49cd5
+Número de CPE: FHHH00000087
+Resultado: La NOTA_CREDITO FHHH-00000087, ha sido ACEPTADO
+ScreenShot de la traza

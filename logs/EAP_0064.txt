@@ -1,0 +1,9 @@
+Log de Caso de Prueba EAP_0064
+Tipo CPE: Nota Crédito
+Subtipo CPE: Cargo
+Tipo Cargo: Recargo al consumo y/o propinas
+Tipo Cargo: Recargo al consumo y/o propinas
+URL: http://qaacepta2107.acepta.pe/v01/0B6067D61D24F9B78D95DE18695E1B3B212B31EF?k=f39735bccd5dfbdca8ce9655c7a16e15
+Número de CPE: FHHH00000098
+Resultado: CPE Rechazado por la OSE, código de Error: 2119-El documento modificado en la Nota de credito no esta registrada..-
+ScreenShot de la traza

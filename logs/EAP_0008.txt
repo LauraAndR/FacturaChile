@@ -1,0 +1,8 @@
+Log de Caso de Prueba EAP_0008
+Tipo CPE: Factura
+Subtipo CPE: Exportación Gratuita
+URL: http://qaacepta2107.acepta.pe/v01/FBE37DBEB79FA2FE65F696287009396D4CB9A5AF?k=77942da508724a7ecff6a4c2953d648d
+Número de CPE: FHHH00000542
+Resultado: La FACTURA FHHH-00000542, ha sido OBSERVADO
+Debe consignar la informacion del tipo de transaccion del comprobante
+ScreenShot de la traza

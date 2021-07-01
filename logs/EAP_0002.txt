@@ -1,0 +1,7 @@
+Log de Caso de Prueba EAP_0002
+Tipo CPE: Factura
+Subtipo CPE: Exportación Gratuita
+URL: http://qaacepta2107.acepta.pe/v01/B7051273E069B6516B7DE4B79CBDAF8E20F4109E?k=f1a910027cb1ba35bb2efcdbd1c36a75
+Número de CPE: FHHH00000538
+Resultado: 
+ScreenShot de la traza

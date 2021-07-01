@@ -1,0 +1,7 @@
+Log de Caso de Prueba EAP_0068
+Tipo CPE: Nota Crédito
+Subtipo CPE: Afecta Gratuita
+URL: http://qaacepta2107.acepta.pe/v01/BBCC09D1870A274CAC4EB8521C83A0731AC80D68?k=da8938a7d5f6cf775679a159dc254cd2
+Número de CPE: FHHH00000099
+Resultado: 
+ScreenShot de la traza

@@ -1,0 +1,9 @@
+Log de Caso de Prueba EAP_0022
+Tipo CPE: Factura
+Subtipo CPE: Cargo
+Tipo Cargo: Recargo al consumo y/o propinas
+Seleccion tipo de documento
+URL: http://qaacepta2107.acepta.pe/v01/0B92DEECAB7895C597FF8AE8F37081353D71095D?k=f651ad0e7e2cfc897d415fa946a86c86
+Número de CPE: FHHH00000565
+Resultado: CPE Rechazado por la OSE, código de Error: 3025-El dato ingresado en factor de cargo o descuento global no cumple con el formato establecido..-
+ScreenShot de la traza

@@ -1,0 +1,8 @@
+Log de Caso de Prueba EAP_0059
+Tipo CPE: Nota Crédito
+Subtipo CPE: Cargo
+Tipo Cargo: No afectan a la base imponible del IGV/IVAP
+URL: http://qaacepta2107.acepta.pe/v01/EBC2D878203336B9FB6B6EBB9130DB4EF8C130E6?k=84a0046b9653c5ff784824e5a65c4edc
+Número de CPE: FHHH00000093
+Resultado: CPE Rechazado por la OSE, código de Error: 2119-El documento modificado en la Nota de credito no esta registrada..-
+ScreenShot de la traza

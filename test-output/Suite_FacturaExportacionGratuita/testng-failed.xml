@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite_FacturaExportacionGratuita]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test_FacturaExportacionGratuita(failed)">
+    <classes>
+      <class name="test.Tests_FacturaExportacionGratuita">
+        <methods>
+          <include name="setUp"/>
+          <include name="PruebaOcho"/>
+          <include name="FinEjecucion"/>
+        </methods>
+      </class> <!-- test.Tests_FacturaExportacionGratuita -->
+    </classes>
+  </test> <!-- Test_FacturaExportacionGratuita(failed) -->
+</suite> <!-- Failed suite [Suite_FacturaExportacionGratuita] -->

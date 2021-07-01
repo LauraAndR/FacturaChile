@@ -1,0 +1,9 @@
+Log de Caso de Prueba EAP_0085
+Tipo CPE: Factura
+Subtipo CPE: Exportación
+Tipo Operacion SUNAT: Prestación servicios realizados íntegramente en el país
+URL: http://qaacepta2107.acepta.pe/v01/4753BF182AA3E7A53CB0DA980734EAE6665F0657?k=3c7ff344a3981136b22df4f14a9aed81
+Número de CPE: FP0100001317
+Resultado: La FACTURA FP01-00001317, ha sido OBSERVADO
+Debe consignar la informacion del tipo de transaccion del comprobante
+ScreenShot de la traza

@@ -1,0 +1,10 @@
+Log de Caso de Prueba EAP_0015
+Tipo CPE: Factura
+Subtipo CPE: Cargo
+Tipo Cargo: Si afectan a la base imponible del IGV/IVAP
+Seleccion tipo de documento
+URL: http://qaacepta2107.acepta.pe/v01/165B6DAFD9338A1E0FC7636B8000D7B628318428?k=b520fe25f1afd4a48da7ed688b454f1f
+Número de CPE: FHHH00000559
+Resultado: La FACTURA FHHH-00000559, ha sido OBSERVADO
+Debe consignar la informacion del tipo de transaccion del comprobante
+ScreenShot de la traza

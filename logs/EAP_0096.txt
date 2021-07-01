@@ -1,0 +1,10 @@
+Log de Caso de Prueba EAP_0096
+Tipo CPE: Factura
+Subtipo CPE: Descuentos
+Tipo Cargo: Si afectan a la base imponible
+Seleccion tipo de documento
+URL: http://qaacepta2107.acepta.pe/v01/D3E656E70EED84ABCA62A496FD4A2A23B7B8EB73?k=4facb2c6f7735647e0e9301d8cbaab4e
+Número de CPE: FP0100001324
+Resultado: La FACTURA FP01-00001324, ha sido OBSERVADO
+Debe consignar la informacion del tipo de transaccion del comprobante
+ScreenShot de la traza

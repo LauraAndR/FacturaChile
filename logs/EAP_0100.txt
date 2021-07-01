@@ -1,0 +1,9 @@
+Log de Caso de Prueba EAP_0100
+Tipo CPE: Boleta
+Subtipo CPE: Descuentos
+Tipo Cargo: Si afectan a la base imponible
+Seleccion tipo de documento
+URL: http://qaacepta2107.acepta.pe/v01/4821BC74624DB08E1DBC1C670417FEEBF32EBB79?k=c9afc31b7b50925c271ce62abc2452f1
+Número de CPE: BP0100000724
+Resultado: La BOLETA BP01-00000724, ha sido ACEPTADO
+ScreenShot de la traza

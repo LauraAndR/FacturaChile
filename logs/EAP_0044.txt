@@ -1,0 +1,9 @@
+Log de Caso de Prueba EAP_0044
+Tipo CPE: Boleta
+Subtipo CPE: Cargo
+Tipo Cargo: Si afectan a la base imponible del IGV/IVAP
+Seleccion tipo de documento
+URL: http://qaacepta2107.acepta.pe/v01/44E727C7C0BF122614D3004C17908745A4F67734?k=af92615b6440e01d4c7b4e804e4158cf
+Número de CPE: BP0100000730
+Resultado: La BOLETA BP01-00000730, ha sido ACEPTADO
+ScreenShot de la traza

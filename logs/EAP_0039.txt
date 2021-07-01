@@ -1,0 +1,10 @@
+Log de Caso de Prueba EAP_0039
+Tipo CPE: Factura
+Subtipo CPE: Inafecta Gratuita
+Tipo Operacion SUNAT: Transferencia gratuita
+Seleccion tipo de documento
+URL: http://qaacepta2107.acepta.pe/v01/B50976ACF2965F8B27CA9A80E900CBB809CEAFD3?k=d8f1cab3b975f6b3b4c765dbaa02f04d
+Número de CPE: FHHH00000550
+Resultado: La FACTURA FHHH-00000550, ha sido OBSERVADO
+Debe consignar la informacion del tipo de transaccion del comprobante
+ScreenShot de la traza

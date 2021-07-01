@@ -1,0 +1,10 @@
+Log de Caso de Prueba EAP_0046
+Tipo CPE: Boleta
+Subtipo CPE: Cargo
+Tipo Cargo: No afectan a la base imponible del IGV/IVAP
+Seleccion tipo de documento
+URL: http://qaacepta2107.acepta.pe/v01/631351B12A322AD99671BADB8098D81027C057F0?k=a9ff25049f844d83998f34481f76335d
+Número de CPE: BP0100000731
+Resultado: La BOLETA BP01-00000731, ha sido OBSERVADO
+El Código producto de SUNAT no es válido
+ScreenShot de la traza

@@ -1,0 +1,9 @@
+Log de Caso de Prueba EAP_0056
+Tipo CPE: Boleta
+Subtipo CPE: Inafecta Gratuita
+Tipo Inafecta Gratuita: Retiro por Bonificación
+URL: http://qaacepta2107.acepta.pe/v01/F89FCAFEF2D6E6802C2289BEBA50C4E77546DB11?k=733f079f4b4b34b7836e6e498c1a9c21
+Número de CPE: BHHH00000296
+Resultado: La BOLETA BHHH-00000296, ha sido OBSERVADO
+El Código producto de SUNAT no es válido
+ScreenShot de la traza

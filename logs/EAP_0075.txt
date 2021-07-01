@@ -1,0 +1,4 @@
+Log de Caso de Prueba EAP_0075
+Tipo CPE: Nota Débito
+Subtipo CPE: Cargo
+Tipo Cargo: No afectan a la base imponible del IGV/IVAP

@@ -1,0 +1,9 @@
+Log de Caso de Prueba EAP_0001
+Tipo CPE: Factura
+Subtipo CPE: Exportación Gratuita
+Tipo Operacion SUNAT: Prestación servicios realizados íntegramente en el país
+URL: http://qaacepta2107.acepta.pe/v01/2CC16C3388FB58FC10632AE24E881F8D91AC5E55?k=87a59fd0d10483258c3621bdc875550d
+Número de CPE: FHHH00000537
+Resultado: La FACTURA FHHH-00000537, ha sido OBSERVADO
+El Código producto de SUNAT no es válido
+ScreenShot de la traza

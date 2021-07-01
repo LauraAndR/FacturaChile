@@ -1,0 +1,4 @@
+Log de Caso de Prueba EAP_0077
+Tipo CPE: Nota Débito
+Subtipo CPE: Cargo
+Tipo Cargo: Recargo al consumo y/o propinas

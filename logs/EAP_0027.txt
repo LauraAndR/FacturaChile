@@ -1,0 +1,9 @@
+Log de Caso de Prueba EAP_0027
+Tipo CPE: Factura
+Subtipo CPE: Afecta Gratuita
+Seleccion tipo de documento
+URL: http://qaacepta2107.acepta.pe/v01/9B8A032D65DFE782C3A89CB962951CFBF127AE42?k=a1160878cc6c7f1a1e605bcec048366d
+Número de CPE: FHHH00000552
+Resultado: La FACTURA FHHH-00000552, ha sido OBSERVADO
+Debe consignar la informacion del tipo de transaccion del comprobante
+ScreenShot de la traza

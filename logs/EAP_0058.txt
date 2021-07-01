@@ -1,0 +1,10 @@
+Log de Caso de Prueba EAP_0058
+Tipo CPE: Boleta
+Subtipo CPE: Exonerada Gratuita
+Tipo Exonerda Gratuita: Transferencia gratuita
+Seleccion tipo de documento
+URL: http://qaacepta2107.acepta.pe/v01/8154707308B45B920455EBAEEC05AD065F281DB9?k=bf06849a431c927314dfc6040ec72b2e
+Número de CPE: BHHH00000292
+Resultado: La BOLETA BHHH-00000292, ha sido OBSERVADO
+Debe consignar el Total Valor de Venta
+ScreenShot de la traza

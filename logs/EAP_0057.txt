@@ -1,0 +1,8 @@
+Log de Caso de Prueba EAP_0057
+Tipo CPE: Boleta
+Subtipo CPE: Exonerada
+Seleccion tipo de documento
+URL: http://qaacepta2107.acepta.pe/v01/90441F5BC4371D783C34ABDD2033797426CAE169?k=5819139e79c848b925f2febf4f1c1c66
+Número de CPE: BHHH00000291
+Resultado: La BOLETA BHHH-00000291, ha sido ACEPTADO
+ScreenShot de la traza

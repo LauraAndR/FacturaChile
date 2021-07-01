@@ -1,0 +1,7 @@
+Log de Caso de Prueba EAP_0011
+Tipo CPE: Nota Débito
+Subtipo CPE: Exportación Gratuita
+URL: http://qaacepta2107.acepta.pe/v01/A069418ED30D89A05CEB6DBDEBA6703ADB8FFDEE?k=d6dbbf08c0a0357045b8673a59d3f53c
+Número de CPE: FHHH00000082
+Resultado: La NOTA_DEBITO FHHH-00000082, ha sido ACEPTADO
+ScreenShot de la traza

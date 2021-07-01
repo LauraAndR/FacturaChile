@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="test.Tests_FacturaAfectaGratuita">
+        <methods>
+          <include name="setUp"/>
+          <include name="Script_0030"/>
+          <include name="Script_0032"/>
+          <include name="FinEjecucion"/>
+        </methods>
+      </class> <!-- test.Tests_FacturaAfectaGratuita -->
+      <class name="test.Tests_FacturaExportacionGratuita">
+        <methods>
+          <include name="Script_0003"/>
+          <include name="setUp"/>
+          <include name="Script_0006"/>
+          <include name="FinEjecucion"/>
+        </methods>
+      </class> <!-- test.Tests_FacturaExportacionGratuita -->
+      <class name="test.Tests_FacturaCargo">
+        <methods>
+          <include name="FinEjecucion"/>
+          <include name="Script_0021"/>
+          <include name="setUp"/>
+          <include name="Script_0013"/>
+        </methods>
+      </class> <!-- test.Tests_FacturaCargo -->
+      <class name="test.Tests_FacturaAfectaInafecta">
+        <methods>
+          <include name="FinEjecucion"/>
+          <include name="Script_0024"/>
+          <include name="Script_0025"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.Tests_FacturaAfectaInafecta -->
+      <class name="test.Test_BoletaDescuentoGlobalAfecta">
+        <methods>
+          <include name="Script_0102"/>
+          <include name="setUp"/>
+          <include name="FinEjecucion"/>
+        </methods>
+      </class> <!-- test.Test_BoletaDescuentoGlobalAfecta -->
+      <class name="test.Tests_BoletaCargo">
+        <methods>
+          <include name="setUp"/>
+          <include name="Script_0048"/>
+          <include name="FinEjecucion"/>
+          <include name="Script_0045"/>
+        </methods>
+      </class> <!-- test.Tests_BoletaCargo -->
+      <class name="test.Test_FacturaExportacion">
+        <methods>
+          <include name="FinEjecucion"/>
+          <include name="Script_0090"/>
+          <include name="setUp"/>
+          <include name="Script_0087"/>
+        </methods>
+      </class> <!-- test.Test_FacturaExportacion -->
+      <class name="test.Tests_NotaDebitoCargo">
+        <methods>
+          <include name="Script_0074"/>
+          <include name="Script_0076"/>
+          <include name="Script_0073"/>
+          <include name="FinEjecucion"/>
+          <include name="Script_0075"/>
+          <include name="setUp"/>
+          <include name="Script_0077"/>
+          <include name="Script_0072"/>
+        </methods>
+      </class> <!-- test.Tests_NotaDebitoCargo -->
+      <class name="test.Tests_FacturaExonerada">
+        <methods>
+          <include name="setUp"/>
+          <include name="FinEjecucion"/>
+          <include name="Script_0041"/>
+        </methods>
+      </class> <!-- test.Tests_FacturaExonerada -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

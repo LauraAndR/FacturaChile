@@ -1,0 +1,7 @@
+Log de Caso de Prueba EAP_0083
+Tipo CPE: Nota Débito
+Subtipo CPE: Exonerada Gratuita
+URL: http://qaacepta2107.acepta.pe/v01/9ED790C5FBE6955F4895EEE4D89EBA1E3A374211?k=365797d92beefa601612fc88c1e72585
+Número de CPE: FHHH00000087
+Resultado: 
+ScreenShot de la traza

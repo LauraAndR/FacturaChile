@@ -1,0 +1,8 @@
+Log de Caso de Prueba EAP_0069
+Tipo CPE: Nota Crédito
+Subtipo CPE: Inafecta Gratuita
+Tipo Inafecta Gratuita: Retiro por Muestras Médicas
+URL: http://qaacepta2107.acepta.pe/v01/7942C74983EFE819FC2755B0C65045F55E000158?k=d0190e55b26cfc15e2bca3d73b326943
+Número de CPE: FHHH00000088
+Resultado: CPE Rechazado por la OSE, código de Error: 2119-El documento modificado en la Nota de credito no esta registrada..-
+ScreenShot de la traza

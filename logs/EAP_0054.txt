@@ -1,0 +1,8 @@
+Log de Caso de Prueba EAP_0054
+Tipo CPE: Boleta
+Subtipo CPE: Afecta-Inafecta
+Seleccion tipo de documento
+URL: http://qaacepta2107.acepta.pe/v01/76526785EB55EFDC32BF381FCB9B0F4001B0CFF8?k=b37f63ad4322fd0417f8520f53c515dc
+Número de CPE: BHHH00000295
+Resultado: La BOLETA BHHH-00000295, ha sido ACEPTADO
+ScreenShot de la traza

@@ -1,0 +1,3 @@
+Log de Caso de Prueba EAP_0090
+Tipo CPE: Factura
+Subtipo CPE: Exportación

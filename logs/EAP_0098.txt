@@ -1,0 +1,10 @@
+Log de Caso de Prueba EAP_0098
+Tipo CPE: Factura
+Subtipo CPE: Descuentos
+Tipo Cargo: No afectan a la base imponible
+Seleccion tipo de documento
+URL: http://qaacepta2107.acepta.pe/v01/D6CBA963BC45AF76D51388E9E92ACABD303FB66A?k=9ea8be3a032beb97f4f4f5c636a08cf1
+Número de CPE: FP0100001326
+Resultado: La FACTURA FP01-00001326, ha sido OBSERVADO
+El Código producto de SUNAT no es válido
+ScreenShot de la traza

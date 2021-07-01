@@ -1,0 +1,10 @@
+Log de Caso de Prueba EAP_0035
+Tipo CPE: Factura
+Subtipo CPE: Inafecta Gratuita
+Tipo Operacion SUNAT: Retiro por Muestras Médicas
+Seleccion tipo de documento
+URL: http://qaacepta2107.acepta.pe/v01/7E33E00DBE20183B9027C438DBB708F73A9E6635?k=defe94e0eee73261f8e225cbd3623690
+Número de CPE: FHHH00000546
+Resultado: La FACTURA FHHH-00000546, ha sido OBSERVADO
+Debe consignar la informacion del tipo de transaccion del comprobante
+ScreenShot de la traza

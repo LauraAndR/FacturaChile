@@ -1,0 +1,10 @@
+Log de Caso de Prueba EAP_0101
+Tipo CPE: Boleta
+Subtipo CPE: Descuentos
+Tipo Cargo: Si afectan a la base imponible
+Seleccion tipo de documento
+URL: http://qaacepta2107.acepta.pe/v01/249D9391CB45A2EA287FBF90C65CE4D21D1E5149?k=1f1e041dd529f47f61efd7462d305296
+Número de CPE: BP0100000725
+Resultado: La BOLETA BP01-00000725, ha sido OBSERVADO
+El Código producto de SUNAT no es válido
+ScreenShot de la traza

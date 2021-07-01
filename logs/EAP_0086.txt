@@ -1,0 +1,8 @@
+Log de Caso de Prueba EAP_0086
+Tipo CPE: Factura
+Subtipo CPE: Exportación
+URL: http://qaacepta2107.acepta.pe/v01/DBF03C3374CE98E51773BCB3DACDDECC31260D17?k=b93edfc551fdaef40fe5daf6e3d0f6aa
+Número de CPE: FP0100001318
+Resultado: La FACTURA FP01-00001318, ha sido OBSERVADO
+Debe consignar la informacion del tipo de transaccion del comprobante
+ScreenShot de la traza

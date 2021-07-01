@@ -1,0 +1,10 @@
+Log de Caso de Prueba EAP_0037
+Tipo CPE: Factura
+Subtipo CPE: Inafecta Gratuita
+Tipo Operacion SUNAT: Retiro por Convenio Colectivo
+Seleccion tipo de documento
+URL: http://qaacepta2107.acepta.pe/v01/969427A42B003999F5BD460DFEF858FA4FC0DE6E?k=aa35bccb2f15d049a21e0532b34819fb
+Número de CPE: FHHH00000548
+Resultado: La FACTURA FHHH-00000548, ha sido OBSERVADO
+Debe consignar la informacion del tipo de transaccion del comprobante
+ScreenShot de la traza
