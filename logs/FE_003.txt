@@ -1,0 +1,3 @@
+Log de Caso de Prueba FE_003
+Login por Identidad Digital
+Click al botón Autorizar

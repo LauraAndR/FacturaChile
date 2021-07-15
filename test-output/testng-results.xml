@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="102394" started-at="2021-07-08T23:04:30Z" finished-at="2021-07-08T23:06:12Z">
+  <suite name="Default suite" duration-ms="83370" started-at="2021-07-15T21:12:52Z" finished-at="2021-07-15T21:14:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="102394" started-at="2021-07-08T23:04:30Z" finished-at="2021-07-08T23:06:12Z">
-      <class name="test.Tests_FacturaAfecta">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.Tests_FacturaAfecta@50a7bc6e]" name="setUp" is-config="true" duration-ms="7221" started-at="2021-07-08T23:04:30Z" finished-at="2021-07-08T23:04:37Z">
+    <test name="Default test" duration-ms="83370" started-at="2021-07-15T21:12:52Z" finished-at="2021-07-15T21:14:15Z">
+      <class name="test.Tests_FacturaExenta">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.Tests_FacturaExenta@50a7bc6e]" name="setUp" is-config="true" duration-ms="5848" started-at="2021-07-15T21:12:52Z" finished-at="2021-07-15T21:12:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="Script_0066()[pri:0, instance:test.Tests_FacturaAfecta@50a7bc6e]" name="Script_0066" duration-ms="94893" started-at="2021-07-08T23:04:37Z" finished-at="2021-07-08T23:06:12Z">
+        <test-method status="PASS" signature="Script_0035()[pri:0, instance:test.Tests_FacturaExenta@50a7bc6e]" name="Script_0035" duration-ms="77370" started-at="2021-07-15T21:12:58Z" finished-at="2021-07-15T21:14:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Script_0066 -->
-        <test-method status="PASS" signature="FinEjecucion()[pri:0, instance:test.Tests_FacturaAfecta@50a7bc6e]" name="FinEjecucion" is-config="true" duration-ms="241" started-at="2021-07-08T23:06:12Z" finished-at="2021-07-08T23:06:12Z">
+        </test-method> <!-- Script_0035 -->
+        <test-method status="PASS" signature="FinEjecucion()[pri:0, instance:test.Tests_FacturaExenta@50a7bc6e]" name="FinEjecucion" is-config="true" duration-ms="120" started-at="2021-07-15T21:14:15Z" finished-at="2021-07-15T21:14:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FinEjecucion -->
-      </class> <!-- test.Tests_FacturaAfecta -->
+      </class> <!-- test.Tests_FacturaExenta -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

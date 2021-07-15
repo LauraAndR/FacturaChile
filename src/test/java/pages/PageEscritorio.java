@@ -2,13 +2,16 @@ package pages;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 import common.CapturaPantalla;
@@ -95,4 +98,76 @@ public class PageEscritorio {
 		}while(i==0);
 		Thread.sleep(2000);
 	}
+	
+	public void ClickCubo (String caso) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.id("myApps")).click();
+				String texto ="Click en Cubo";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible dar clic en Cubo");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(3000);
+	}
+	
+	public void SeleccionarOpcionCuboDTE (String caso) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				Thread.sleep(3000);
+				driver.findElement(By.xpath("//*[@id=\"myAppsDialog\"]/div/div/div[2]/div/div/div[2]/a/div/div/div/div")).click();
+				String texto ="Seleccionar opción en Cubo";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible seleccionar opción en Cubo");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(3000);
+	}
+	
+	public List<WebElement> BuscarTipoDocumento () throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				Select tipoDocumento = new Select (driver.findElement(By.id("formEmitirdocumento_tipofactura")));
+				i=1;
+				return tipoDocumento.getOptions();
+				
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible encontrar la opción de Tipo Documento");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(2000);
+		return null;
+	}
+
 }

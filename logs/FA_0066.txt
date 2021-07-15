@@ -1,6 +1,8 @@
 Log de Caso de Prueba FA_0066
 Login por Identidad Digital
 Click al botón Autorizar
+Click en Cubo
+Seleccionar opción en Cubo
 Seleccionar Opcion de Menú
 Seleccion Tipo Documento
 Ingreso Fecha Desde

@@ -1,0 +1,19 @@
+Log de Caso de Prueba FA_0103
+Login por Identidad Digital
+Click al botón Autorizar
+Click en Cubo
+Seleccionar opción en Cubo
+Seleccionar Opcion de Menú
+Seleccion Tipo Documento
+Ingreso Fecha Desde
+Seleccion Forma de Pago
+Seleccion Tipo de Compra
+Seleccion Tipo de Venta
+Ingresar RUT
+Ingresar Producto
+Ingresar Producto
+Cambiar swith en Descuento/Recargo
+Ingresar Descuento
+Click en Eliminar
+Clic botón Emitir Factura Afecta
+Caso OK

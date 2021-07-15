@@ -1,0 +1,15 @@
+Log de Caso de Prueba FA_0075
+Login por Identidad Digital
+Click al botón Autorizar
+Click en Cubo
+Seleccionar opción en Cubo
+Seleccionar Opcion de Menú
+Seleccion Tipo Documento
+Ingreso Fecha Desde
+Seleccion Forma de Pago
+Seleccion Tipo de Compra
+Seleccion Tipo de Venta
+Ingresar RUT
+Ingresar Datos del Producto
+Clic botón Limpiar
+Clic botón Emitir Factura Afecta

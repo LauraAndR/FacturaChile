@@ -1,0 +1,17 @@
+Log de Caso de Prueba FA_0093
+Login por Identidad Digital
+Click al botón Autorizar
+Click en Cubo
+Seleccionar opción en Cubo
+Seleccionar Opcion de Menú
+Seleccion Tipo Documento
+Ingreso Fecha Desde
+Seleccion Forma de Pago
+Seleccion Tipo de Compra
+Seleccion Tipo de Venta
+Ingresar RUT
+Ingresar Producto
+Clic botón Agregar Transporte
+Ingresar datos de transporte
+Clic botón Emitir Factura Afecta
+Caso OK
