@@ -196,7 +196,7 @@ public class PageEmisionDTE {
 				driver.findElement(By.id("txt_codpro")).sendKeys(codigo);
 				Thread.sleep(2000);
 				driver.findElement(By.id("txt_codpro")).sendKeys(Keys.TAB);
-				Thread.sleep(5000);
+				Thread.sleep(6000);
 				
 				driver.findElement(By.id("txt_cantprod")).sendKeys(cant);
 				Thread.sleep(2000);

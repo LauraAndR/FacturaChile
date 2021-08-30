@@ -15,4 +15,4 @@ Ingresar Producto
 Cambiar swith en Descuento/Recargo
 Ingresar Descuento
 Clic botón Emitir Factura Afecta
-Caso OK
+Caso NOK

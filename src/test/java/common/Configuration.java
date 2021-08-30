@@ -17,4 +17,11 @@ public class Configuration {
 			return inPath;
 		}
 	}
+
+	/*
+	 * USUARIOS
+	 */
+	public static String USER_RUTH = "13712759-8";
+	public static String PASS_RUTH = "Verity5.0";
+	
 }

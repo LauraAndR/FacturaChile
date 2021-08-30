@@ -1,0 +1,13 @@
+Log de Caso de Prueba FE_0082
+Login por Identidad Digital
+Click al botón Autorizar
+Seleccionar Opcion de Menú
+Seleccion Tipo Documento
+Ingreso Fecha Desde
+Seleccion Forma de Pago
+Seleccion Tipo de Compra
+Seleccion Tipo de Venta
+Ingresar RUT
+Ingresar Producto
+Cambiar swith en Descuento/Recargo
+Ingresar Descuento

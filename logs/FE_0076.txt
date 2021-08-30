@@ -1,0 +1,14 @@
+Log de Caso de Prueba FE_0076
+Login por Identidad Digital
+Click al botón Autorizar
+Seleccionar Opcion de Menú
+Seleccion Tipo Documento
+Ingreso Fecha Desde
+Seleccion Forma de Pago
+Seleccion Tipo de Compra
+Seleccion Tipo de Venta
+Ingresar RUT
+Ingresar Producto
+Ingresar parámetros agrupados adicionales
+Clic botón Emitir Factura Afecta
+Caso OK

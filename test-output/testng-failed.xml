@@ -5,9 +5,9 @@
     <classes>
       <class name="test.Tests_FacturaExenta">
         <methods>
+          <include name="Script_0082"/>
           <include name="FinEjecucion"/>
           <include name="setUp"/>
-          <include name="Script_0001"/>
         </methods>
       </class> <!-- test.Tests_FacturaExenta -->
     </classes>
