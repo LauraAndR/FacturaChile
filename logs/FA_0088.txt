@@ -1,21 +1,19 @@
 Log de Caso de Prueba FA_0088
 Login por Identidad Digital
 Click al botón Autorizar
-Click en Cubo
-Seleccionar opción en Cubo
 Seleccionar Opcion de Menú
 Seleccion Tipo Documento
 Ingreso Fecha Desde
 Seleccion Forma de Pago
-Seleccion Tipo de Compra
 Seleccion Tipo de Venta
 Ingresar RUT
 Ingresar Producto
-Clic botón Establecer Referencias
 Seleccion Tipo de Documento
+Seleccion código de referencia
 Ingresar Folio
 Ingreso Fecha Referencia
-Clic en checkbox Indicador de Referencia Global
 Clic botón Agregar Referencias
-Clic botón Emitir Factura Afecta
+Cambiar swith en Descuento/Recargo
+Ingresar Recargo
+Clic botón Emitir Nota Crédito
 Caso OK

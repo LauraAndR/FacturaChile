@@ -1349,4 +1349,441 @@ public class PageEmisionDTE {
 		}while(i==0);
 		Thread.sleep(5000);
 	}
+	
+	public void BtnEmitirNotaCredito (String caso) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.id("btn_firmar_factura")).click();
+				
+				String texto ="Clic botón Emitir Nota Crédito";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible hacer clic botón Emitir Nota Crédito");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(5000);
+	}
+	
+	public void SeleccionarCodReferencia (String caso, String opcion) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				Select codReferencia = new Select (driver.findElement(By.id("formEmitirdocumento_CodRef")));
+				codReferencia.selectByVisibleText(opcion);
+				String texto ="Seleccion código de referencia";	
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Seleccionar código de referencia");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(1000);
+	}
+	
+	public void CheckboxFacturaTuristica (String caso) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.id("formEmitirdocumento_TipoFactEsp1")).click();
+				
+				String texto ="Clic checkbox Factura Turística";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible hacer clic checkbox Factura Turística");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(1000);
+	}
+	
+	
+	public void CheckboxIndicadorNoRebaja (String caso) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.id("id=\"formEmitirdocumento_IndNoRebaja\"")).click();
+				
+				String texto ="Clic checkbox Indicador de no rebaja";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible hacer clic checkbox Indicador de no rebaja");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(1000);
+	}
+	
+	public void AgregarNumeroIdExtranjero (String caso, String num) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.id("formEmitirdocumento_NumId")).sendKeys(num);
+	
+				String texto ="Ingresar Número de identificación Extranjero";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Ingresar Número de identificación Extranjero");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(1000);
+	}
+	
+	public void SeleccionarTipoDoctoTurista (String caso, String opcion) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				Select tipoDocumento = new Select (driver.findElement(By.id("formEmitirdocumento_TipoDocID")));
+				tipoDocumento.selectByVisibleText(opcion);
+				String texto ="Seleccion Tipo Documento Turista";	
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Seleccionar Tipo Documento Turista");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(1000);
+	}
+	
+	public void AgregarGiroExtranjero (String caso, String giro) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.id("formEmitirdocumento_giro")).sendKeys(giro);
+
+				String texto ="Ingresar giro Extranjero";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Ingresar giro Extranjero");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(1000);
+	}
+	
+	public void AgregarDireccionExtranjero (String caso, String direccion) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.id("formEmitirdocumento_direccion")).sendKeys(direccion);
+
+				String texto ="Ingresar Dirección Extranjero";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Ingresar dirección Extranjero");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(1000);
+	}
+	
+	public void AgregarComunaExtranjero (String caso, String comuna) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.id("formEmitirdocumento_comuna")).sendKeys(comuna);
+
+				String texto ="Ingresar Comuna Extranjero";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Ingresar Comuna Extranjero");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(1000);
+	}
+	
+	public void AgregarCiudadExtranjero (String caso, String ciudad) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.id("formEmitirdocumento_CuidadRecep")).sendKeys(ciudad);
+
+				String texto ="Ingresar ciudad Extranjero";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Ingresar ciudad Extranjero");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(1000);
+	}
+	
+	public void AgregarProductoUnidadMedida (String caso, String codigo, String cant, String uni) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.id("txt_codpro")).sendKeys(codigo);
+				Thread.sleep(2000);
+				driver.findElement(By.id("txt_codpro")).sendKeys(Keys.TAB);
+				Thread.sleep(6000);
+				
+				driver.findElement(By.id("txt_cantprod")).sendKeys(cant);
+				Thread.sleep(2000);
+				
+				driver.findElement(By.id("txt_medprod")).sendKeys(uni);
+				Thread.sleep(2000);
+				
+				driver.findElement(By.id("btn_addTogrid")).click();
+				
+				String texto ="Ingresar Producto";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Ingresar Producto");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(3000);
+	}
+	
+	public void AgregarProductoConRetencionTotal (String caso, String codigo, String cant) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.id("txt_codpro")).sendKeys(codigo);
+				Thread.sleep(2000);
+				driver.findElement(By.id("txt_codpro")).sendKeys(Keys.TAB);
+				Thread.sleep(6000);
+				
+				driver.findElement(By.id("txt_cantprod")).sendKeys(cant);
+				Thread.sleep(1000);
+				
+				driver.findElement(By.id("checkboxretenciontotal")).click();
+				Thread.sleep(1000);
+				
+				driver.findElement(By.id("btn_addTogrid")).click();
+				
+				String texto ="Ingresar Producto";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Ingresar Producto");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(1000);
+	}
+	
+	
+	public void AgregarProductoConIvaExento (String caso, String codigo, String cant) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.id("txt_codpro")).sendKeys(codigo);
+				Thread.sleep(2000);
+				driver.findElement(By.id("txt_codpro")).sendKeys(Keys.TAB);
+				Thread.sleep(6000);
+				
+				driver.findElement(By.id("txt_cantprod")).sendKeys(cant);
+				Thread.sleep(1000);
+				
+				driver.findElement(By.id("checkbox_productoExento")).click();
+				Thread.sleep(1000);
+				
+				driver.findElement(By.id("btn_addTogrid")).click();
+				
+				String texto ="Ingresar Producto";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Ingresar Producto");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(1000);
+	}
+	
+	public void SeleccionarIndicadorTraslado (String caso, String opcion) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				Select indicador = new Select (driver.findElement(By.id("formEmitirdocumento_guiaDespachoindTransl")));
+				indicador.selectByVisibleText(opcion);
+				String texto ="Seleccion Indicador de traslado";	
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Seleccionar Indicador de traslado");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(2000);
+	}
+	
+	
+	public void SeleccionarCodigoTraslado (String caso, String opcion) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				Select codigo = new Select (driver.findElement(By.id("formEmitirdocumento_CdgTraslado")));
+				codigo.selectByVisibleText(opcion);
+				String texto ="Seleccion código de traslado";	
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Seleccionar código de traslado");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(2000);
+	}
+	
+	public void BtnEmitirGuiaDespacho (String caso) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.id("btn_firmar_factura")).click();
+				
+				String texto ="Clic botón Emitir Guia de Despacho";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible hacer clic botón Emitir Guia de Despacho");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(5000);
+	}
+	
 }

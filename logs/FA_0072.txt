@@ -1,15 +1,19 @@
 Log de Caso de Prueba FA_0072
 Login por Identidad Digital
 Click al botón Autorizar
-Click en Cubo
-Seleccionar opción en Cubo
 Seleccionar Opcion de Menú
 Seleccion Tipo Documento
 Ingreso Fecha Desde
 Seleccion Forma de Pago
-Seleccion Tipo de Compra
 Seleccion Tipo de Venta
 Ingresar RUT
 Ingresar Producto
-Clic botón Emitir Factura Afecta
+Clic botón Agregar Transporte
+Ingresar datos de transporte
+Seleccion Tipo de Documento
+Seleccion código de referencia
+Ingresar Folio
+Ingreso Fecha Referencia
+Clic botón Agregar Referencias
+Clic botón Emitir Nota Crédito
 Caso OK

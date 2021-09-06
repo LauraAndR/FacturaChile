@@ -4808,7 +4808,350 @@ public class Tests_FacturaExenta {
 	}
 	
 	
+	@Test
+	public void Script_0082() throws InterruptedException, FileNotFoundException, InvalidFormatException, IOException, AWTException {
+		String cp = "FE_0082";
+		// Emisión DTE - Individual - factura Exenta - monto exento - descuento/recargo - Recargo - %
+		System.out.println(cp);
+		String resultado1 = null;
+		String resultado2 = null;
+		
+		PageLoginAdm pageLoginAdm = new PageLoginAdm(driver);
+		
+		CrearLogyDocumento crearLogyDocumento = new CrearLogyDocumento(driver);
+		crearLogyDocumento.CrearEvidencias(cp);
+		
+		pageLoginAdm.ClickIngresarLogin(cp);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		
+		PageEscritorio pageEscritorio = new PageEscritorio(driver);
+		pageEscritorio.BarraMenu(cp, "Emisión DTE");
+		pageEscritorio.SeleccionarTipoDocumento(cp, "Factura Exenta Electrónica");
+		
+		PageEmisionDTE pageEmisionDTE = new PageEmisionDTE(driver);
+		pageEmisionDTE.FechaEmision(cp);
+		pageEmisionDTE.SeleccionarFormaPago(cp, "Sin Costo");
+		pageEmisionDTE.SeleccionarTipoCompra(cp, "1. Compras del Giro");
+		pageEmisionDTE.SeleccionarTipoVenta(cp, "1. Ventas del Giro");
+		pageEmisionDTE.IngresoRutCliente(cp, "81.537.600-5");
+		
+		Thread.sleep(2000);
+		Robot robot = new Robot();
+		robot.setAutoDelay(7);
+		robot.mouseWheel(7);
+		Thread.sleep(2000);
+		
+		pageEmisionDTE.AgregarProducto1(cp, "000001", "1");
+		pageEmisionDTE.SwithSIDescuentoRecargo(cp);
+		pageEmisionDTE.IngresoRecargoPrc(cp, "20", "Recargo QA");
+
+		
+		robot.setAutoDelay(7);
+		robot.mouseWheel(7);
+		Thread.sleep(2000);
+		
+		//Primera validación
+		if(driver.findElement(By.xpath("//*[@id=\"formEmitirdocumento_tablaTotales\"]/tbody/tr[3]/th")).getText().contains("Sub-Total Exento") &&
+				driver.findElement(By.id("formEmitirdocumento_sub-tota-exento")).getAttribute("value").contains("1.000") &&
+				driver.findElement(By.xpath("//*[@id=\"formEmitirdocumento_tablaTotales\"]/tbody/tr[4]/th")).getText().contains("Recargo Exento Recargo QA (20%)") &&
+				driver.findElement(By.id("formEmitirdocumento_RecargoExento")).getAttribute("value").contains("200") &&
+				driver.findElement(By.xpath("//*[@id=\"formEmitirdocumento_tablaTotales\"]/tbody/tr[4]/td[2]/a")).isDisplayed()){
+			resultado1 = "FLUJO OK";
+			System.out.println("Primera validación OK");
+		}
+		else {
+			resultado1 = "FLUJO NOOK";
+		}
+		
+		pageEmisionDTE.BtnEmitirFacturaAfecta(cp);
+		
+		
+		//Segunda validación
+		if(driver.findElement(By.className("facturaDocumento")).isDisplayed() && 
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[1]/tbody/tr/td[2]/table/tbody/tr/td/font/b/div[2]")).getText().contains("FACTURA NO AFECTA O EXENTA ELECTRÓNICA") &&
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[2]/tbody/tr/td[1]/table[1]/tbody/tr/td[1]/table/tbody/tr[3]/td[2]")).getText().contains("81.537.600-5") &&
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[2]/tbody/tr/td[1]/table[1]/tbody/tr/td[2]/table/tbody/tr[3]/td[2]")).getText().contains("Sin Costo (entrega gratuita)") &&
+				
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[2]/tbody/tr/td[1]/table[2]/tbody/tr[2]/td[1]")).getText().contains("000001") &&
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[2]/tbody/tr/td[1]/table[2]/tbody/tr[2]/td[2]")).getText().contains("Harina retencion 12%") &&
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[2]/tbody/tr/td[1]/table[2]/tbody/tr[2]/td[3]")).getText().contains("1") &&
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[2]/tbody/tr/td[1]/table[2]/tbody/tr[2]/td[4]")).getText().contains("TO") &&
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[2]/tbody/tr/td[1]/table[2]/tbody/tr[2]/td[5]")).getText().contains("1000") &&
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[2]/tbody/tr/td[1]/table[2]/tbody/tr[2]/td[6]")).getText().contains("1000") &&
+				
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[3]/tbody/tr/td[3]/table/tbody/tr[1]/td[3]")).getText().contains("200") &&
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[3]/tbody/tr/td[3]/table/tbody/tr[2]/td[3]")).getText().contains("1.200") &&
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[3]/tbody/tr/td[3]/table/tbody/tr[3]/td[3]")).getText().contains("1.200")){
+			crearLogyDocumento.CasoOk(cp);
+			System.out.println("FLUJO OK");
+			resultado2 = "FLUJO OK";
+		}
+		else {
+			crearLogyDocumento.CasoNok(cp);
+			System.out.println("FLUJO NOOK");
+			resultado2 = "FLUJO NOOK";
+		}
+		
+		assertEquals(resultado1, "FLUJO OK", "Se verifica resultado del test "+cp);
+		assertEquals(resultado2, "FLUJO OK", "Se verifica resultado del test "+cp);
+	}
 	
+	@Test
+	public void Script_0083() throws InterruptedException, FileNotFoundException, InvalidFormatException, IOException, AWTException {
+		String cp = "FE_0083";
+		// Emisión DTE - Individual - factura Exenta - monto exento - descuento/recargo - Recargo - pesos
+		System.out.println(cp);
+		String resultado1 = null;
+		String resultado2 = null;
+		
+		PageLoginAdm pageLoginAdm = new PageLoginAdm(driver);
+		
+		CrearLogyDocumento crearLogyDocumento = new CrearLogyDocumento(driver);
+		crearLogyDocumento.CrearEvidencias(cp);
+		
+		pageLoginAdm.ClickIngresarLogin(cp);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		
+		PageEscritorio pageEscritorio = new PageEscritorio(driver);
+		pageEscritorio.BarraMenu(cp, "Emisión DTE");
+		pageEscritorio.SeleccionarTipoDocumento(cp, "Factura Exenta Electrónica");
+		
+		PageEmisionDTE pageEmisionDTE = new PageEmisionDTE(driver);
+		pageEmisionDTE.FechaEmision(cp);
+		pageEmisionDTE.SeleccionarFormaPago(cp, "Sin Costo");
+		pageEmisionDTE.SeleccionarTipoCompra(cp, "1. Compras del Giro");
+		pageEmisionDTE.SeleccionarTipoVenta(cp, "1. Ventas del Giro");
+		pageEmisionDTE.IngresoRutCliente(cp, "81.537.600-5");
+		
+		Thread.sleep(2000);
+		Robot robot = new Robot();
+		robot.setAutoDelay(7);
+		robot.mouseWheel(7);
+		Thread.sleep(2000);
+		
+		pageEmisionDTE.AgregarProducto1(cp, "000001", "1");
+		pageEmisionDTE.SwithSIDescuentoRecargo(cp);
+		pageEmisionDTE.IngresoRecargoPeso(cp, "300", "Recargo QA");
+
+		
+		robot.setAutoDelay(7);
+		robot.mouseWheel(7);
+		Thread.sleep(2000);
+		
+		//Primera validación
+		if(driver.findElement(By.xpath("//*[@id=\"formEmitirdocumento_tablaTotales\"]/tbody/tr[3]/th")).getText().contains("Sub-Total Exento") &&
+				driver.findElement(By.id("formEmitirdocumento_sub-tota-exento")).getAttribute("value").contains("1.000") &&
+				driver.findElement(By.xpath("//*[@id=\"formEmitirdocumento_tablaTotales\"]/tbody/tr[4]/th")).getText().contains("Recargo Exento Recargo QA") &&
+				driver.findElement(By.id("formEmitirdocumento_RecargoExento")).getAttribute("value").contains("300") &&
+				driver.findElement(By.xpath("//*[@id=\"formEmitirdocumento_tablaTotales\"]/tbody/tr[4]/td[2]/a")).isDisplayed()){
+			resultado1 = "FLUJO OK";
+			System.out.println("Primera validación OK");
+		}
+		else {
+			resultado1 = "FLUJO NOOK";
+		}
+		
+		pageEmisionDTE.BtnEmitirFacturaAfecta(cp);
+		
+		
+		//Segunda validación
+		if(driver.findElement(By.className("facturaDocumento")).isDisplayed() && 
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[1]/tbody/tr/td[2]/table/tbody/tr/td/font/b/div[2]")).getText().contains("FACTURA NO AFECTA O EXENTA ELECTRÓNICA") &&
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[2]/tbody/tr/td[1]/table[1]/tbody/tr/td[1]/table/tbody/tr[3]/td[2]")).getText().contains("81.537.600-5") &&
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[2]/tbody/tr/td[1]/table[1]/tbody/tr/td[2]/table/tbody/tr[3]/td[2]")).getText().contains("Sin Costo (entrega gratuita)") &&
+				
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[2]/tbody/tr/td[1]/table[2]/tbody/tr[2]/td[1]")).getText().contains("000001") &&
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[2]/tbody/tr/td[1]/table[2]/tbody/tr[2]/td[2]")).getText().contains("Harina retencion 12%") &&
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[2]/tbody/tr/td[1]/table[2]/tbody/tr[2]/td[3]")).getText().contains("1") &&
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[2]/tbody/tr/td[1]/table[2]/tbody/tr[2]/td[4]")).getText().contains("TO") &&
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[2]/tbody/tr/td[1]/table[2]/tbody/tr[2]/td[5]")).getText().contains("1000") &&
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[2]/tbody/tr/td[1]/table[2]/tbody/tr[2]/td[6]")).getText().contains("1000") &&
+				
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[3]/tbody/tr/td[3]/table/tbody/tr[1]/td[3]")).getText().contains("300") &&
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[3]/tbody/tr/td[3]/table/tbody/tr[2]/td[3]")).getText().contains("1.300") &&
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[3]/tbody/tr/td[3]/table/tbody/tr[3]/td[3]")).getText().contains("1.300")){
+			crearLogyDocumento.CasoOk(cp);
+			System.out.println("FLUJO OK");
+			resultado2 = "FLUJO OK";
+		}
+		else {
+			crearLogyDocumento.CasoNok(cp);
+			System.out.println("FLUJO NOOK");
+			resultado2 = "FLUJO NOOK";
+		}
+		
+		assertEquals(resultado1, "FLUJO OK", "Se verifica resultado del test "+cp);
+		assertEquals(resultado2, "FLUJO OK", "Se verifica resultado del test "+cp);
+	}
+	
+	@Test
+	public void Script_0084() throws InterruptedException, FileNotFoundException, InvalidFormatException, IOException, AWTException {
+		String cp = "FE_0084";
+		// Emisión DTE - Individual - factura Exenta - monto exento - descuento/recargo - Eliminar
+		System.out.println(cp);
+		String resultado1 = null;
+		String resultado2 = null;
+		
+		PageLoginAdm pageLoginAdm = new PageLoginAdm(driver);
+		
+		CrearLogyDocumento crearLogyDocumento = new CrearLogyDocumento(driver);
+		crearLogyDocumento.CrearEvidencias(cp);
+		
+		pageLoginAdm.ClickIngresarLogin(cp);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		
+		PageEscritorio pageEscritorio = new PageEscritorio(driver);
+		pageEscritorio.BarraMenu(cp, "Emisión DTE");
+		pageEscritorio.SeleccionarTipoDocumento(cp, "Factura Exenta Electrónica");
+		
+		PageEmisionDTE pageEmisionDTE = new PageEmisionDTE(driver);
+		pageEmisionDTE.FechaEmision(cp);
+		pageEmisionDTE.SeleccionarFormaPago(cp, "Sin Costo");
+		pageEmisionDTE.SeleccionarTipoCompra(cp, "1. Compras del Giro");
+		pageEmisionDTE.SeleccionarTipoVenta(cp, "1. Ventas del Giro");
+		pageEmisionDTE.IngresoRutCliente(cp, "81.537.600-5");
+		
+		Thread.sleep(2000);
+		Robot robot = new Robot();
+		robot.setAutoDelay(7);
+		robot.mouseWheel(7);
+		Thread.sleep(2000);
+		
+		pageEmisionDTE.AgregarProducto1(cp, "000001", "1");
+		pageEmisionDTE.SwithSIDescuentoRecargo(cp);
+		pageEmisionDTE.IngresoRecargoPeso(cp, "300", "Recargo QA");
+		pageEmisionDTE.ClickEliminar(cp);
+		
+		robot.setAutoDelay(7);
+		robot.mouseWheel(7);
+		Thread.sleep(2000);
+		
+		//Primera validación
+		if(driver.findElement(By.xpath("//*[@id=\"columnaDescuentosExento\"]/div/label")).getText().contains("Descuento/Recargo") &&
+				driver.findElement(By.xpath("//*[@id=\"columnaDescuentosExento\"]/div/div/div/label[2]")).getText().contains("No")){
+			resultado1 = "FLUJO OK";
+		}
+		else {
+			resultado1 = "FLUJO NOOK";
+		}
+		
+		pageEmisionDTE.BtnEmitirFacturaAfecta(cp);
+		
+		
+		//Segunda validación
+		if(driver.findElement(By.className("facturaDocumento")).isDisplayed() && 
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[1]/tbody/tr/td[2]/table/tbody/tr/td/font/b/div[2]")).getText().contains("FACTURA NO AFECTA O EXENTA ELECTRÓNICA") &&
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[2]/tbody/tr/td[1]/table[1]/tbody/tr/td[1]/table/tbody/tr[3]/td[2]")).getText().contains("81.537.600-5") &&
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[2]/tbody/tr/td[1]/table[1]/tbody/tr/td[2]/table/tbody/tr[3]/td[2]")).getText().contains("Sin Costo (entrega gratuita)") &&
+				
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[2]/tbody/tr/td[1]/table[2]/tbody/tr[2]/td[1]")).getText().contains("000001") &&
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[2]/tbody/tr/td[1]/table[2]/tbody/tr[2]/td[2]")).getText().contains("Harina retencion 12%") &&
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[2]/tbody/tr/td[1]/table[2]/tbody/tr[2]/td[3]")).getText().contains("1") &&
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[2]/tbody/tr/td[1]/table[2]/tbody/tr[2]/td[4]")).getText().contains("TO") &&
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[2]/tbody/tr/td[1]/table[2]/tbody/tr[2]/td[5]")).getText().contains("1000") &&
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[2]/tbody/tr/td[1]/table[2]/tbody/tr[2]/td[6]")).getText().contains("1000") &&
+				
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[3]/tbody/tr/td[3]/table/tbody/tr[1]/td[3]")).getText().contains("1.000") &&
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div/div/div/div/table/tbody/tr/td/table[3]/tbody/tr/td[3]/table/tbody/tr[2]/td[3]")).getText().contains("1.000")){
+			crearLogyDocumento.CasoOk(cp);
+			System.out.println("FLUJO OK");
+			resultado2 = "FLUJO OK";
+		}
+		else {
+			crearLogyDocumento.CasoNok(cp);
+			System.out.println("FLUJO NOOK");
+			resultado2 = "FLUJO NOOK";
+		}
+		
+		assertEquals(resultado1, "FLUJO OK", "Se verifica resultado del test "+cp);
+		assertEquals(resultado2, "FLUJO OK", "Se verifica resultado del test "+cp);
+	}
+	
+	
+	@Test
+	public void Script_0091() throws InterruptedException, FileNotFoundException, InvalidFormatException, IOException, AWTException {
+		String cp = "FE_0091";
+		// Emisión DTE - Individual - factura Exenta - Limpiar
+		System.out.println(cp);
+		String resultado1 = null;
+		String resultado2 = null;
+		
+		PageLoginAdm pageLoginAdm = new PageLoginAdm(driver);
+		
+		CrearLogyDocumento crearLogyDocumento = new CrearLogyDocumento(driver);
+		crearLogyDocumento.CrearEvidencias(cp);
+		
+		pageLoginAdm.ClickIngresarLogin(cp);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		
+		PageEscritorio pageEscritorio = new PageEscritorio(driver);
+		pageEscritorio.BarraMenu(cp, "Emisión DTE");
+		pageEscritorio.SeleccionarTipoDocumento(cp, "Factura Exenta Electrónica");
+		
+		PageEmisionDTE pageEmisionDTE = new PageEmisionDTE(driver);
+		pageEmisionDTE.FechaEmision(cp);
+		pageEmisionDTE.SeleccionarFormaPago(cp, "Sin Costo");
+		pageEmisionDTE.SeleccionarTipoCompra(cp, "1. Compras del Giro");
+		pageEmisionDTE.SeleccionarTipoVenta(cp, "1. Ventas del Giro");
+		pageEmisionDTE.IngresoRutCliente(cp, "81.537.600-5");
+		
+		Thread.sleep(2000);
+		Robot robot = new Robot();
+		robot.setAutoDelay(7);
+		robot.mouseWheel(7);
+		Thread.sleep(2000);
+		
+		pageEmisionDTE.AgregarProducto1(cp, "000001", "1");
+		
+		pageEmisionDTE.ClickLimpiar(cp);
+		
+		List<WebElement> lista_TipoDocumento = new ArrayList<WebElement>();
+		lista_TipoDocumento = pageEscritorio.BuscarTipoDocumento();
+		
+		// Definiendo la lista de referencia
+		List<String> lista_referencia = new ArrayList<String>();
+		lista_referencia.add("Documento a Emitir");
+		lista_referencia.add("Factura Afecta Electrónica");
+		lista_referencia.add("Factura Exenta Electrónica");
+		lista_referencia.add("Nota de Débito Electrónica");
+		lista_referencia.add("Nota de Crédito Electrónica");
+		lista_referencia.add("Guía de Despacho Electrónica");
+		lista_referencia.add("Boleta Afecta Electrónica");
+		lista_referencia.add("Boleta Exenta Electrónica");
+		lista_referencia.add("Factura de Exportación Electrónica");
+		lista_referencia.add("Nota de Débito de Exportación Electrónica");
+		lista_referencia.add("Nota de Crédito de Exportación Electrónica");
+		
+
+		for (int i = 0; i <= lista_TipoDocumento.size() - 1; i++) {
+			System.out.println("print gettext():");
+			System.out.println(lista_TipoDocumento.get(i).getText());
+			if(lista_TipoDocumento.get(i).getText().equals(lista_referencia.get(i))) {
+				System.out.println("SON IGUALES");
+				resultado1 = "FLUJO OK";
+			}else {
+				System.out.println("SON DISTINTOS");
+				resultado2 = "FLUJO NOOK";
+			}
+		}
+		
+		System.out.println("resultado1: "+resultado1);
+		System.out.println("resultado2: "+resultado2);
+		
+		if(resultado1.equals("FLUJO OK") && resultado2==null){
+			crearLogyDocumento.CasoOk(cp);
+			System.out.println("FLUJO OK");
+			resultado2 = "FLUJO OK";
+		}
+		else {
+			crearLogyDocumento.CasoNok(cp);
+			System.out.println("FLUJO NOOK");
+			resultado2 = "FLUJO NOOK";
+		}
+		
+		assertEquals(resultado1, "FLUJO OK", "Se verifica resultado 1 del test "+cp);
+		assertEquals(resultado2, "FLUJO OK", "Se verifica resultado 2 del test "+cp);
+	}
 	
 	
 	@AfterMethod
