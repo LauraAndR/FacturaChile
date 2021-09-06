@@ -5,9 +5,10 @@ Seleccionar Opcion de Menú
 Seleccion Tipo Documento
 Ingreso Fecha Desde
 Seleccion Forma de Pago
-Seleccion Tipo de Compra
-Seleccion Tipo de Venta
 Ingresar RUT
 Ingresar Producto
-Clic botón Emitir Factura Afecta
+Ingresar Referencia
+Ingreso Fecha Referencia
+Clic botón Agregar Referencias
+Clic botón Emitir Nota debito
 Caso OK
