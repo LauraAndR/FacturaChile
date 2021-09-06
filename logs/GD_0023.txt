@@ -1,0 +1,14 @@
+Log de Caso de Prueba GD_0023
+Login por Identidad Digital
+Click al botón Autorizar
+Seleccionar Opcion de Menú
+Seleccion Tipo Documento
+Ingreso Fecha Desde
+Seleccion Forma de Pago
+Seleccion Indicador de traslado
+Seleccion código de traslado
+Ingresar RUT
+Ingresar Producto
+Ingresar datos de transporte
+Clic botón Emitir Guia de Despacho
+Caso OK

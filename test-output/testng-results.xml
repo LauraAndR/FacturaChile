@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -20,6 +21,29 @@
           </reporter-output>
         </test-method> <!-- FinEjecucion -->
       </class> <!-- test.Tests_NotaDebito -->
+=======
+<testng-results skipped="0" failed="0" ignored="21" total="22" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="119291" started-at="2021-09-06T17:52:56Z" finished-at="2021-09-06T17:54:55Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="119291" started-at="2021-09-06T17:52:56Z" finished-at="2021-09-06T17:54:55Z">
+      <class name="test.Tests_GuiaDespacho">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.Tests_GuiaDespacho@e50a6f6]" name="setUp" is-config="true" duration-ms="8873" started-at="2021-09-06T17:52:56Z" finished-at="2021-09-06T17:53:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="Script_0029()[pri:0, instance:test.Tests_GuiaDespacho@e50a6f6]" name="Script_0029" duration-ms="110197" started-at="2021-09-06T17:53:05Z" finished-at="2021-09-06T17:54:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Script_0029 -->
+        <test-method status="PASS" signature="FinEjecucion()[pri:0, instance:test.Tests_GuiaDespacho@e50a6f6]" name="FinEjecucion" is-config="true" duration-ms="187" started-at="2021-09-06T17:54:55Z" finished-at="2021-09-06T17:54:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FinEjecucion -->
+      </class> <!-- test.Tests_GuiaDespacho -->
+>>>>>>> c817f28339ae6282493a575b09c5089def626900
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

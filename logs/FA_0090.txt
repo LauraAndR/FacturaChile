@@ -1,16 +1,12 @@
 Log de Caso de Prueba FA_0090
 Login por Identidad Digital
 Click al botón Autorizar
-Click en Cubo
-Seleccionar opción en Cubo
 Seleccionar Opcion de Menú
 Seleccion Tipo Documento
 Ingreso Fecha Desde
 Seleccion Forma de Pago
-Seleccion Tipo de Compra
 Seleccion Tipo de Venta
 Ingresar RUT
 Ingresar Producto
-Clic botón Agregar Transporte
-Clic botón Emitir Factura Afecta
+Click en Limpiar
 Caso OK

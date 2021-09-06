@@ -5,9 +5,19 @@ Seleccionar Opcion de Menú
 Seleccion Tipo Documento
 Ingreso Fecha Desde
 Seleccion Forma de Pago
-Seleccion Tipo de Compra
 Seleccion Tipo de Venta
-Ingresar RUT
+Clic checkbox Factura Turística
+Ingresar Número de identificación Extranjero
+Seleccion Tipo Documento Turista
+Ingresar giro Extranjero
+Ingresar Dirección Extranjero
+Ingresar Comuna Extranjero
+Ingresar ciudad Extranjero
 Ingresar Producto
-Clic botón Emitir Factura Afecta
+Seleccion Tipo de Documento
+Seleccion código de referencia
+Ingresar Folio
+Ingreso Fecha Referencia
+Clic botón Agregar Referencias
+Clic botón Emitir Nota Crédito
 Caso OK

@@ -3,6 +3,7 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="test.Tests_NotaDebito">
         <methods>
           <include name="Script_0002"/>
@@ -10,6 +11,15 @@
           <include name="FinEjecucion"/>
         </methods>
       </class> <!-- test.Tests_NotaDebito -->
+=======
+      <class name="test.Tests_GuiaDespacho">
+        <methods>
+          <include name="FinEjecucion"/>
+          <include name="setUp"/>
+          <include name="Script_0020"/>
+        </methods>
+      </class> <!-- test.Tests_GuiaDespacho -->
+>>>>>>> c817f28339ae6282493a575b09c5089def626900
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
