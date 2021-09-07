@@ -1410,22 +1410,14 @@ public class PageEmisionDTE {
 		Thread.sleep(5000);
 	}
 	
-<<<<<<< HEAD
-	public void BtnEmitirNotaDebito (String caso) throws InterruptedException {
-=======
 	public void BtnEmitirNotaCredito (String caso) throws InterruptedException {
->>>>>>> c817f28339ae6282493a575b09c5089def626900
 		int i=0;
 		int j=0;
 		do {
 			try {
 				driver.findElement(By.id("btn_firmar_factura")).click();
 				
-<<<<<<< HEAD
-				String texto ="Clic botón Emitir Nota debito";
-=======
 				String texto ="Clic botón Emitir Nota Crédito";
->>>>>>> c817f28339ae6282493a575b09c5089def626900
 				log.modificarArchivoLog(caso,texto);
 				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
 				texto=texto.replace(" ","_");
@@ -1435,19 +1427,38 @@ public class PageEmisionDTE {
 				// TODO: handle exception
 				j++;
 				if(j==3) {
-<<<<<<< HEAD
-					System.out.println("No fue posible hacer clic botón Emitir Nota Credito");
-=======
 					System.out.println("No fue posible hacer clic botón Emitir Nota Crédito");
->>>>>>> c817f28339ae6282493a575b09c5089def626900
 					i=1;
 				}
 			}
 		}while(i==0);
 		Thread.sleep(5000);
 	}
-<<<<<<< HEAD
-=======
+	
+	public void BtnEmitirNotaDebito (String caso) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.id("btn_firmar_factura")).click();
+				
+				String texto ="Clic botón Emitir Nota Crédito";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible hacer clic botón Emitir Nota Crédito");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(5000);
+	}
 	
 	public void SeleccionarCodReferencia (String caso, String opcion) throws InterruptedException {
 		int i=0;
@@ -1860,5 +1871,4 @@ public class PageEmisionDTE {
 		Thread.sleep(5000);
 	}
 	
->>>>>>> c817f28339ae6282493a575b09c5089def626900
 }
