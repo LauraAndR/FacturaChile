@@ -14,4 +14,4 @@ Ingresar Folio
 Ingreso Fecha Referencia
 Clic botón Agregar Referencias
 Clic botón Emitir Nota Crédito
-Caso OK
+Caso NOK

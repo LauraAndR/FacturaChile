@@ -4271,6 +4271,7 @@ public class Tests_NotaCredito {
 		pageEmisionDTE.AgregarProducto1(cp, "000001", "1");
 		
 		pageEmisionDTE.SeleccionartipoDoc(cp, "30 - Factura");
+		pageEmisionDTE.SeleccionarCodReferencia(cp, "1 - Anula Documento");
 		pageEmisionDTE.AgregarFolio(cp, "0001");
 		pageEmisionDTE.FechaReferencia(cp);
 		pageEmisionDTE.ClickCheckboxIndicadorReferenciaGlobal(cp);

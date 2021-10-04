@@ -5,9 +5,9 @@ Seleccionar Opcion de Menú
 Seleccion Tipo Documento
 Ingreso Fecha Desde
 Seleccion Forma de Pago
-Seleccion Tipo de Venta
 Ingresar RUT
 Ingresar Producto
+Clic botón Agregar Transporte
 Seleccion Tipo de Documento
 Seleccion código de referencia
 Ingresar Folio

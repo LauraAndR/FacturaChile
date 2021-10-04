@@ -5,14 +5,7 @@ Seleccionar Opcion de Menú
 Seleccion Tipo Documento
 Ingreso Fecha Desde
 Seleccion Forma de Pago
-Seleccion Tipo de Venta
 Ingresar RUT
 Ingresar Producto
-Ingresar observaciones
-Seleccion Tipo de Documento
-Seleccion código de referencia
-Ingresar Folio
-Ingreso Fecha Referencia
-Clic botón Agregar Referencias
-Clic botón Emitir Nota Crédito
+Click en Limpiar
 Caso OK

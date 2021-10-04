@@ -7,3 +7,10 @@ Ingreso Fecha Desde
 Seleccion Forma de Pago
 Ingresar RUT
 Ingresar Producto
+Seleccion Tipo de Documento
+Seleccion código de referencia
+Ingresar Folio
+Ingreso Fecha Referencia
+Clic botón Agregar Referencias
+Clic botón Emitir Nota Crédito
+Caso OK

@@ -22,7 +22,7 @@ public class Configuration {
 	 * USUARIOS
 	 */
 	public static String USER_RUTH = "13712759-8";
-	public static String PASS_RUTH = "Verity5.0";
+	public static String PASS_RUTH = "Verity6.0";
 	
 	public static String USER_RICARDO = "18215678-7";
 	public static String PASS_RICARDO = "Verity5.0";

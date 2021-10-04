@@ -68,7 +68,7 @@ public class PageEmisionDTE {
 			try {
 				FechaActual fechaActual = new FechaActual();
 				String fecha = fechaActual.FechaVencimiento();
-				driver.findElement(By.id("formEmitirdocumento_fechaEmision")).sendKeys(fecha);
+				driver.findElement(By.id("formEmitirdocumento_fechaVencimiento")).sendKeys(fecha);
 				Thread.sleep(1000);
 				String texto ="Ingreso Fecha Emisión";
 				log.modificarArchivoLog(caso,texto);
@@ -1846,6 +1846,33 @@ public class PageEmisionDTE {
 		Thread.sleep(2000);
 	}
 	
+	public void SeleccionarTipoServicioDatosBoleta (String caso, String opcion) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				Select tipoServicio = new Select (driver.findElement(By.id("formEmitirdocumento_boletaTiposerv")));
+				tipoServicio.selectByVisibleText(opcion);
+				String texto ="Seleccion Tipo de Servicio";	
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Seleccionar Tipo de Servicio");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(2000);
+	}
+	
+	
+	
 	public void BtnEmitirGuiaDespacho (String caso) throws InterruptedException {
 		int i=0;
 		int j=0;
@@ -1870,5 +1897,7 @@ public class PageEmisionDTE {
 		}while(i==0);
 		Thread.sleep(5000);
 	}
+	
+	
 	
 }

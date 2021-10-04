@@ -4,20 +4,8 @@ Click al botón Autorizar
 Seleccionar Opcion de Menú
 Seleccion Tipo Documento
 Ingreso Fecha Desde
-Seleccion Forma de Pago
-Seleccion Tipo de Venta
-Clic checkbox Factura Turística
-Ingresar Número de identificación Extranjero
-Seleccion Tipo Documento Turista
-Ingresar giro Extranjero
-Ingresar Dirección Extranjero
-Ingresar Comuna Extranjero
-Ingresar ciudad Extranjero
+Ingresar RUT
+Seleccion Tipo de Servicio
 Ingresar Producto
-Seleccion Tipo de Documento
-Seleccion código de referencia
-Ingresar Folio
-Ingreso Fecha Referencia
-Clic botón Agregar Referencias
-Clic botón Emitir Nota Crédito
-Caso OK
+Clic botón Emitir Factura Afecta
+Caso NOK

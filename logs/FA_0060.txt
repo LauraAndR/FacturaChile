@@ -1,3 +1,17 @@
 Log de Caso de Prueba FA_0060
 Login por Identidad Digital
 Click al botón Autorizar
+Seleccionar Opcion de Menú
+Seleccion Tipo Documento
+Ingreso Fecha Desde
+Seleccion Forma de Pago
+Ingresar RUT
+Ingresar Producto
+Ingresar parámetros adicionales
+Seleccion Tipo de Documento
+Seleccion código de referencia
+Ingresar Folio
+Ingreso Fecha Referencia
+Clic botón Agregar Referencias
+Clic botón Emitir Nota Crédito
+Caso OK
