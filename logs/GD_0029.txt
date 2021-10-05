@@ -11,4 +11,4 @@ Ingresar RUT
 Ingresar Producto
 Ingresar datos de transporte
 Clic botón Emitir Guia de Despacho
-Caso OK
+Caso NOK

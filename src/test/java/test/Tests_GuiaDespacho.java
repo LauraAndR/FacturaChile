@@ -1802,7 +1802,7 @@ public class Tests_GuiaDespacho {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -1849,7 +1849,8 @@ public class Tests_GuiaDespacho {
 				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div[1]/div[1]/div/div/table/tbody/tr/td/table[3]/tbody/tr/td[3]/table/tbody/tr[1]/td[3]")).getText().contains("1.000") &&
 				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div[1]/div[1]/div/div/table/tbody/tr/td/table[3]/tbody/tr/td[3]/table/tbody/tr[2]/td[3]")).getText().contains("0") &&
 				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div[1]/div[1]/div/div/table/tbody/tr/td/table[3]/tbody/tr/td[3]/table/tbody/tr[3]/td[3]")).getText().contains("190") &&
-				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div[1]/div[1]/div/div/table/tbody/tr/td/table[3]/tbody/tr/td[3]/table/tbody/tr[4]/td[3]")).getText().contains("1.190") &&
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div[1]/div[1]/div/div/table/tbody/tr/td/table[3]/tbody/tr/td[3]/table/tbody/tr[4]/td[3]")).getText().contains("120") &&
+				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div[1]/div[1]/div/div/table/tbody/tr/td/table[3]/tbody/tr/td[3]/table/tbody/tr[5]/td[3]")).getText().contains("1.310") &&
 
 				
 				driver.findElement(By.xpath("//*[@id=\"pintador\"]/div[1]/div[1]/div/div/table/tbody/tr/td/table[4]/tbody/tr/td[2]/table/tbody/tr[2]/td[2]")).getText().contains("Operación constituye venta") &&
