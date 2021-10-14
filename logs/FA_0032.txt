@@ -4,14 +4,9 @@ Click al botón Autorizar
 Seleccionar Opcion de Menú
 Seleccion Tipo Documento
 Ingreso Fecha Desde
-Seleccion Forma de Pago
-Seleccion Tipo de Venta
 Ingresar RUT
+Seleccion Tipo de Servicio
 Ingresar Producto
-Seleccion Tipo de Documento
-Seleccion código de referencia
-Ingresar Folio
-Ingreso Fecha Referencia
-Clic botón Agregar Referencias
-Clic botón Emitir Nota Crédito
+Ingresar observaciones
+Clic botón Emitir Factura Afecta
 Caso OK

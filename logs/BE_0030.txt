@@ -1,0 +1,12 @@
+Log de Caso de Prueba BE_0030
+Login por Identidad Digital
+Click al botón Autorizar
+Seleccionar Opcion de Menú
+Seleccion Tipo Documento
+Ingreso Fecha Desde
+Ingresar RUT
+Seleccion Tipo de Servicio
+Ingresar Producto
+Ingresar parámetros agrupados adicionales
+Clic botón Emitir Factura Afecta
+Caso OK

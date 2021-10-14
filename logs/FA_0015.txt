@@ -4,10 +4,8 @@ Click al botón Autorizar
 Seleccionar Opcion de Menú
 Seleccion Tipo Documento
 Ingreso Fecha Desde
-Seleccion Forma de Pago
-Seleccion Tipo de Compra
-Seleccion Tipo de Venta
 Ingresar RUT
+Seleccion Tipo de Servicio
 Ingresar Producto
 Clic botón Emitir Factura Afecta
 Caso OK

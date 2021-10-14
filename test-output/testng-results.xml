@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="102" total="103" passed="1">
   <reporter-output>
   </reporter-output>
@@ -20,6 +21,25 @@
           </reporter-output>
         </test-method> <!-- FinEjecucion -->
       </class> <!-- test.Tests_FacturaExportacion -->
+=======
+<testng-results ignored="32" total="33" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-10-08T18:46:10Z" name="Default suite" finished-at="2021-10-08T18:47:35Z" duration-ms="85330">
+    <groups>
+    </groups>
+    <test started-at="2021-10-08T18:46:10Z" name="Default test" finished-at="2021-10-08T18:47:35Z" duration-ms="85330">
+      <class name="test.Tests_BoletaExenta">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.Tests_BoletaExenta@79e4c792]" started-at="2021-10-08T18:46:10Z" name="setUp" finished-at="2021-10-08T18:46:16Z" duration-ms="6505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Script_0039()[pri:0, instance:test.Tests_BoletaExenta@79e4c792]" started-at="2021-10-08T18:46:16Z" name="Script_0039" finished-at="2021-10-08T18:47:35Z" duration-ms="78792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Script_0039 -->
+      </class> <!-- test.Tests_BoletaExenta -->
+>>>>>>> 783df92ecd4f8bc1aba239966fa55fcbf4d143f0
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
