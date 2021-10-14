@@ -1,0 +1,12 @@
+Log de Caso de Prueba BA_0005
+Login por Identidad Digital
+Click al botón Autorizar
+Seleccionar Opcion de Menú
+Seleccion Tipo Documento
+Ingreso Fecha Desde
+Ingresar RUT
+Seleccion Tipo de Servicio
+Ingreso Fecha Emisión
+Ingresar Producto
+Clic botón Emitir Factura Afecta
+Caso OK

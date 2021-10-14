@@ -169,5 +169,27 @@ public class PageEscritorio {
 		Thread.sleep(2000);
 		return null;
 	}
+	
+	public List<WebElement> BuscarAgregarProducto () throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				Select tipoProducto = new Select (driver.findElement(By.id("btns_agregar_producto")));
+				i=1;
+				return tipoProducto.getOptions();
+				
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible ingresar código Producto");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(2000);
+		return null;
+	}
 
 }
