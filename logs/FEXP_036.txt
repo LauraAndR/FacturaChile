@@ -1,0 +1,31 @@
+Log de Caso de Prueba FEXP_036
+Login por Identidad Digital
+Click al botón Autorizar
+Seleccionar Opcion de Menú
+Seleccion Tipo Documento
+Ingreso Fecha Desde
+Seleccion Forma de Pago
+Seleccion Indicador de servicio
+Ingresar Razón social
+Ingresar ciudad
+Ingresar Producto
+Clic botón Establecer Referencias
+Clic botón Agregar Transporte
+Clic botón Agregar Aduana
+Seleccion Tipo de Documento
+Ingresar datos Otro Documento
+Ingresar Folio
+Ingreso Fecha Referencia
+Clic botón Agregar Referencias
+Ingresar datos de transporte
+Seleccion Modalidad
+Seleccion cláusula
+Ingresar Total
+Ingresar país receptor
+Ingresar país receptor
+Ingresar país receptor
+Seleccion Vía
+Ingresar Información de bulto
+Ingresar país receptor
+Clic botón Emitir Guia de Despacho
+Caso NOK

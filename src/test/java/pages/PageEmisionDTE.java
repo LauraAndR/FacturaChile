@@ -1895,9 +1895,581 @@ public class PageEmisionDTE {
 				}
 			}
 		}while(i==0);
+		Thread.sleep(4000);
+	}
+	
+	// Ricardo 05-10-2021
+	
+	public void BtnAgregarAduana (String caso) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.id("btnAduana")).click();
+				
+				String texto ="Clic botón Agregar Aduana";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible hacer clic botón Agregar Aduana");
+					i=1;
+				}
+			}
+		}while(i==0);
 		Thread.sleep(5000);
 	}
 	
+	public void SeleccionarModalidadAduana (String caso, String opcion) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				Select modalidad = new Select (driver.findElement(By.id("formEmitirdocumento_CodModVenta")));
+				modalidad.selectByVisibleText(opcion);
+				String texto ="Seleccion Modalidad";	
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Seleccionar Modalidad");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(2000);
+	}
+	
+	public void SeleccionarClausulaAduana (String caso, String opcion) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				Select clausula = new Select (driver.findElement(By.id("formEmitirdocumento_CodClauVenta")));
+				clausula.selectByVisibleText(opcion);
+				String texto ="Seleccion cláusula";	
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Seleccionar cláusula");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(2000);
+	}
+	
+	public void IngresoTotalAduana (String caso, String total) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.id("formEmitirdocumento_TotClauVenta")).sendKeys(total);
+				String texto ="Ingresar Total";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Ingresar Total");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(1000);
+	}
+	
+	public void TipoBultoAduana (String caso, String opcion) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				//driver.findElement(By.xpath("//*[@id=\"primerPaso\"]/div[4]/div[3]/div/div[6]/div/span[1]/span[1]/span/ul/li/input")).click();
+				driver.findElement(By.xpath("select2-formEmitirdocumento_CodTpoBultos-container")).click();
+				Thread.sleep(1000);          
+				driver.findElement(By.xpath("//*[text()= '"+ opcion + "']")).click();//para enviar un texto a un campo y lo puedan seleccionar     
+	
+				String texto ="Seleccion tipo bulto";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible ingresar tipo bulto");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(2000);
+	}
 	
 	
+	public void IngresoCantidadMarcaAduana (String caso, String cantidad, String marca) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.id("formEmitirdocumento_CantBultos")).sendKeys(cantidad);
+				driver.findElement(By.id("formEmitirdocumento_Marcas")).sendKeys(marca);
+				Thread.sleep(2000);
+				driver.findElement(By.id("add_bultoAduana")).click();
+				
+				String texto ="Ingresar Cantidad y Marca";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Ingresar  Cantidad y Marca");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(3000);
+	}
+	
+	public void IngresoTotalBultosAduana (String caso, String total) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.id("formEmitirdocumento_TotBultos")).sendKeys(total);
+				String texto ="Ingresar Total";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Ingresar Total");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(3000);
+	}
+	
+	// Factura de Exportación
+	
+	public void SeleccionarIndicadorServicio (String caso, String opcion) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				Select indicador = new Select (driver.findElement(By.id("formEmitirdocumento_IndServicio")));
+				indicador.selectByVisibleText(opcion);
+				String texto ="Seleccion Indicador de servicio";	
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Seleccionar Indicador de servicio");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(1000);
+	}
+	
+	public void IngresoRazonSocialCliente (String caso, String razonSocial) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.id("brazonsocial")).sendKeys(razonSocial);
+				String texto ="Ingresar Razón social";
+				driver.findElement(By.id("btnBuscarRz")).click();
+				driver.findElement(By.xpath("//*[@id=\"modal_buscar_rz\"]/div[2]/div/div[2]/div/table/tbody/tr/td[1]")).click();
+				
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Ingresar Razón social");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(1000);
+	}
+	
+	
+	public void IngresoDatosRazonSocialCliente (String caso, String ciudad) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.id("formEmitirdocumento_CuidadRecep")).sendKeys(ciudad);
+				String texto ="Ingresar ciudad";
+				
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Ingresar ciudad");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(1000);
+	}
+	
+	public void IngresoDatosTransporte2 (String caso, String direccion, String comuna, String region, String tipoDespacho) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.id("formEmitirdocumento_transporteDireccionDestino")).sendKeys(direccion);
+				Thread.sleep(1000);
+				driver.findElement(By.id("formEmitirdocumento_transporteComuna")).sendKeys(comuna);
+				Thread.sleep(1000);
+				driver.findElement(By.id("formEmitirdocumento_transporteCuidad")).sendKeys(comuna);
+				Thread.sleep(1000);
+				
+				Select region2 = new Select (driver.findElement(By.id("formEmitirdocumento_transporteRegion")));
+				region2.selectByVisibleText(region);
+				Thread.sleep(1000);
+				
+				Select tipoDespacho2 = new Select (driver.findElement(By.id("formEmitirdocumento_guiaDespachoTipoDespacho")));
+				tipoDespacho2.selectByVisibleText(tipoDespacho);
+				Thread.sleep(1000);
+	
+				String texto ="Ingresar datos de transporte";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Ingresar datos de transporte");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(1000);
+	}
+	
+	
+	public void IngresoPaisReceptor (String caso, String pais) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.xpath("//*[@id=\"select2-formEmitirdocumento_CodPaisRecep-container\"]/span")).click();
+				
+				driver.findElement(By.xpath("/html/body/span/span/span[1]/input")).sendKeys(pais);
+				driver.findElement(By.xpath("/html/body/span/span/span[1]/input")).sendKeys(Keys.chord(Keys.ENTER));
+				
+				String texto ="Ingresar país receptor";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Ingresar país receptor");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(1000);
+	}
+	
+	public void IngresoPuertoEmbarque (String caso, String puerto) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.xpath("//*[@id=\"select2-formEmitirdocumento_CodPtoEmbarque-container\"]/span")).click();
+				driver.findElement(By.xpath("/html/body/span/span/span[1]/input")).sendKeys(puerto);
+				driver.findElement(By.xpath("/html/body/span/span/span[1]/input")).sendKeys(Keys.chord(Keys.ENTER));
+				
+				String texto ="Ingresar país receptor";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Ingresar país receptor");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(1000);
+	}
+	
+	
+	public void IngresoPuertoDesembarque (String caso, String puerto) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.xpath("//*[@id=\"select2-formEmitirdocumento_CodPtoDesemb-container\"]")).click();
+				driver.findElement(By.xpath("/html/body/span/span/span[1]/input")).sendKeys(puerto);
+				driver.findElement(By.xpath("/html/body/span/span/span[1]/input")).sendKeys(Keys.chord(Keys.ENTER));
+				
+				String texto ="Ingresar país receptor";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Ingresar país receptor");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(1000);
+	}
+	
+	public void AgregarProductoExportación (String caso, String codigo, String cant) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.id("txt_codpro")).sendKeys(codigo);
+				Thread.sleep(1000);
+				driver.findElement(By.id("txt_codpro")).sendKeys(Keys.TAB);
+				Thread.sleep(6000);
+				
+				driver.findElement(By.id("txt_cantprod")).sendKeys(cant);
+				Thread.sleep(1000);
+				
+				driver.findElement(By.id("btn_addTogridExport")).click();
+				
+				String texto ="Ingresar Producto";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Ingresar Producto");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(1000);
+	}
+	
+	
+	public void SeleccionarViaAduana (String caso, String opcion) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				Select indicador = new Select (driver.findElement(By.id("formEmitirdocumento_CodViaTransp")));
+				indicador.selectByVisibleText(opcion);
+				String texto ="Seleccion Vía";	
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Seleccionar Vía");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(1000);
+	}
+	
+	public void IngresoTipoMoneda (String caso, String moneda) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.xpath("//*[@id=\"select2-formEmitirdocumento_TpoMoneda-container\"]/span")).click();
+				driver.findElement(By.xpath("/html/body/span/span/span[1]/input")).sendKeys(moneda);
+				driver.findElement(By.xpath("/html/body/span/span/span[1]/input")).sendKeys(Keys.chord(Keys.ENTER));
+				
+				String texto ="Ingresar tipo moneda";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Ingresar tipo moneda");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(1000);
+	}
+	
+	
+	public void IngresoSegundaMoneda (String caso, String tipoCambio, String TotalOtraMoneda, String TotalExentoOtraMoneda) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				
+				driver.findElement(By.id("formEmitirdocumento_TpoCambio")).sendKeys(tipoCambio);
+				
+				driver.findElement(By.id("formEmitirdocumento_MntTotOtrMnda")).sendKeys(TotalOtraMoneda);
+				
+				driver.findElement(By.id("formEmitirdocumento_MntExeOtrMnda")).sendKeys(TotalExentoOtraMoneda);
+				
+				String texto ="Ingresar segunda moneda";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Ingresar segunda moneda");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(1000);
+	}
+	
+	public void AgregarIndormacionBulto (String caso, String tipo, String cantidad, String marca) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.xpath("//*[@id=\"select2-formEmitirdocumento_CodTpoBultos-container\"]/span")).click();
+				driver.findElement(By.xpath("/html/body/span/span/span[1]/input")).sendKeys(tipo);
+				driver.findElement(By.xpath("/html/body/span/span/span[1]/input")).sendKeys(Keys.chord(Keys.ENTER));
+				
+				driver.findElement(By.id("formEmitirdocumento_CantBultos")).sendKeys(cantidad);
+				
+				driver.findElement(By.id("formEmitirdocumento_Marcas")).sendKeys(marca);
+				
+				driver.findElement(By.id("add_bultoAduana")).click();
+				
+				String texto ="Ingresar Información de bulto";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Ingresar información de bulto");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(1000);
+	}
+	
+	public void AgregarProductoExportacionCodigoItem (String caso, String codigo, String cant, String cod_item, String valor_item) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.id("txt_codpro")).sendKeys(codigo);
+				Thread.sleep(2000);
+				driver.findElement(By.id("txt_codpro")).sendKeys(Keys.TAB);
+				Thread.sleep(5000);
+				
+				driver.findElement(By.id("txt_cantprod")).sendKeys(cant);
+				Thread.sleep(1000);
+				//driver.findElement(By.id("txt_cantprod")).sendKeys(Keys.TAB);
+				//Thread.sleep(1000);
+				
+				driver.findElement(By.id("codigo_qbli")).sendKeys(cod_item);
+				Thread.sleep(1000);
+				
+				driver.findElement(By.id("valor_qbli")).sendKeys(valor_item);
+				Thread.sleep(1000);
+				
+				driver.findElement(By.xpath("//*[@id=\"btn_addTogridExport\"]")).click();
+				
+				String texto ="Ingresar Producto";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Ingresar Producto");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(3000);
+	}
 }

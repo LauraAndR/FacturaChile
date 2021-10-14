@@ -1,0 +1,17 @@
+Log de Caso de Prueba GD_0226
+Login por Identidad Digital
+Click al botón Autorizar
+Seleccionar Opcion de Menú
+Seleccion Tipo Documento
+Ingreso Fecha Desde
+Seleccion Forma de Pago
+Seleccion Indicador de traslado
+Seleccion código de traslado
+Ingresar RUT
+Ingresar Producto
+Ingresar Producto
+Ingresar datos de transporte
+Cambiar swith en Descuento/Recargo
+Ingresar Descuento
+Clic botón Emitir Guia de Despacho
+Caso OK

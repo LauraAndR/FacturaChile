@@ -1,0 +1,13 @@
+Log de Caso de Prueba GD_0237
+Login por Identidad Digital
+Click al botón Autorizar
+Seleccionar Opcion de Menú
+Seleccion Tipo Documento
+Ingreso Fecha Desde
+Seleccion Forma de Pago
+Seleccion Indicador de traslado
+Seleccion código de traslado
+Ingresar RUT
+Ingresar Producto
+Click en Limpiar
+Caso OK

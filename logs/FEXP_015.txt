@@ -1,0 +1,10 @@
+Log de Caso de Prueba FEXP_015
+Login por Identidad Digital
+Click al botón Autorizar
+Seleccionar Opcion de Menú
+Seleccion Tipo Documento
+Ingreso Fecha Desde
+Seleccion Forma de Pago
+Seleccion Indicador de servicio
+Ingresar Razón social
+Ingresar ciudad

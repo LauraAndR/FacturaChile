@@ -1,0 +1,26 @@
+Log de Caso de Prueba FEXP_113
+Login por Identidad Digital
+Click al botón Autorizar
+Seleccionar Opcion de Menú
+Seleccion Tipo Documento
+Ingreso Fecha Desde
+Seleccion Forma de Pago
+Seleccion Indicador de servicio
+Ingresar Razón social
+Ingresar ciudad
+Ingresar Producto
+Clic botón Agregar Transporte
+Clic botón Agregar Aduana
+Ingresar datos de transporte
+Seleccion Modalidad
+Seleccion cláusula
+Ingresar Total
+Ingresar país receptor
+Ingresar país receptor
+Ingresar país receptor
+Seleccion Vía
+Ingresar Información de bulto
+Ingresar tipo moneda
+Ingresar segunda moneda
+Click en Limpiar
+Caso OK

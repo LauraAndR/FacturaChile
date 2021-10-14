@@ -1,0 +1,26 @@
+Log de Caso de Prueba FEXP_007
+Login por Identidad Digital
+Click al botón Autorizar
+Seleccionar Opcion de Menú
+Seleccion Tipo Documento
+Ingreso Fecha Desde
+Seleccion Forma de Pago
+Seleccion Indicador de servicio
+Ingresar Razón social
+Ingresar ciudad
+Ingresar Producto
+Clic botón Agregar Transporte
+Ingresar datos de transporte
+Clic botón Agregar Aduana
+Seleccion Modalidad
+Seleccion cláusula
+Ingresar Total
+Ingresar país receptor
+Ingresar país receptor
+Ingresar país receptor
+Seleccion Vía
+Ingresar Información de bulto
+Ingresar Total
+Ingresar país receptor
+Clic botón Emitir Guia de Despacho
+Caso OK
