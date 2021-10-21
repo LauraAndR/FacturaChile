@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,13 +48,8 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-<<<<<<< HEAD
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Verity-Usuario\AppData\Local\Temp\testng-eclipse--1528667321\testng-customsuite.xml</span>
-=======
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Laura Andrade\AppData\Local\Temp\testng-eclipse--3004049\testng-customsuite.xml</span>
->>>>>>> 783df92ecd4f8bc1aba239966fa55fcbf4d143f0
+                    <span>C:\Users\Verity-Usuario\AppData\Local\Temp\testng-eclipse-213165715\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -96,26 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content failed suite-Default_suite">
                       <span>
-<<<<<<< HEAD
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.Tests_FacturaExportacion" hash-for-method="Script_0113">Script_0113</a> <!-- method navigator-link -->
-=======
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="test.Tests_BoletaExenta" class="method navigator-link" hash-for-method="Script_0039">Script_0039</a> <!-- method navigator-link -->
->>>>>>> 783df92ecd4f8bc1aba239966fa55fcbf4d143f0
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.Tests_FacturaExportacion" hash-for-method="Script_0015">Script_0015</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -127,39 +117,75 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-<<<<<<< HEAD
+              <img src="failed.png"/>
               <span class="class-name">test.Tests_FacturaExportacion</span>
-=======
-              <span class="class-name">test.Tests_BoletaExenta</span>
->>>>>>> 783df92ecd4f8bc1aba239966fa55fcbf4d143f0
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-<<<<<<< HEAD
-                  <a name="Script_0113">
-                  </a> <!-- Script_0113 -->
-                  <span class="method-name">Script_0113</span>
-=======
-                  <a name="Script_0039">
-                  </a> <!-- Script_0039 -->
-                  <span class="method-name">Script_0039</span>
->>>>>>> 783df92ecd4f8bc1aba239966fa55fcbf4d143f0
+                  <a name="Script_0015">
+                  </a> <!-- Script_0015 -->
+                  <span class="method-name">Script_0015</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=94.0.4606.81)
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;DESKTOP-LI3EA6Q&apos;, ip: &apos;172.16.8.176&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\VERITY~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50433}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1369000cfbbd76cc783b207e8068ed80
+*** Element info: {Using=xpath, value=//*[@id=&quot;pintador&quot;]/div[1]/div[1]/div/table[2]/tbody/tr/td[2]/table/tbody/tr[1]/td/table/tbody/tr[2]/td}
+	at sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at test.Tests_FacturaExportacion.Script_0015(Tests_FacturaExportacion.java:970)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
+          </div> <!-- suite-Default_suite-class-failed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-<<<<<<< HEAD
-            <span class="header-content">C:\Users\Verity-Usuario\AppData\Local\Temp\testng-eclipse--1528667321\testng-customsuite.xml</span>
-=======
-            <span class="header-content">C:\Users\Laura Andrade\AppData\Local\Temp\testng-eclipse--3004049\testng-customsuite.xml</span>
->>>>>>> 783df92ecd4f8bc1aba239966fa55fcbf4d143f0
+            <span class="header-content">C:\Users\Verity-Usuario\AppData\Local\Temp\testng-eclipse-213165715\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -168,19 +194,11 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-<<<<<<< HEAD
       &lt;class name=&quot;test.Tests_FacturaExportacion&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;Script_0113&quot;/&gt;
+          &lt;include name=&quot;Script_0015&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- test.Tests_FacturaExportacion --&gt;
-=======
-      &lt;class name=&quot;test.Tests_BoletaExenta&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;Script_0039&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- test.Tests_BoletaExenta --&gt;
->>>>>>> 783df92ecd4f8bc1aba239966fa55fcbf4d143f0
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -222,20 +240,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-<<<<<<< HEAD
-data.setCell(0, 1, 'Script_0113')
+data.setCell(0, 1, 'Script_0015')
 data.setCell(0, 2, 'test.Tests_FacturaExportacion')
-data.setCell(0, 3, 132025);
-=======
-data.setCell(0, 1, 'Script_0039')
-data.setCell(0, 2, 'test.Tests_BoletaExenta')
-data.setCell(0, 3, 78792);
->>>>>>> 783df92ecd4f8bc1aba239966fa55fcbf4d143f0
+data.setCell(0, 3, 98461);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -250,7 +262,6 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-<<<<<<< HEAD
             <span class="header-content">102 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
@@ -261,19 +272,19 @@ return data;
                 <br/>
                 <span class="ignored-method-name">Script_0090</span>
                 <br/>
-                <span class="ignored-method-name">Script_0101</span>
-                <br/>
                 <span class="ignored-method-name">Script_0068</span>
                 <br/>
-                <span class="ignored-method-name">Script_0100</span>
+                <span class="ignored-method-name">Script_0101</span>
                 <br/>
                 <span class="ignored-method-name">Script_0067</span>
                 <br/>
+                <span class="ignored-method-name">Script_0100</span>
+                <br/>
                 <span class="ignored-method-name">Script_0062</span>
                 <br/>
-                <span class="ignored-method-name">Script_0102</span>
-                <br/>
                 <span class="ignored-method-name">Script_0069</span>
+                <br/>
+                <span class="ignored-method-name">Script_0102</span>
                 <br/>
                 <span class="ignored-method-name">Script_0064</span>
                 <br/>
@@ -299,19 +310,21 @@ return data;
                 <br/>
                 <span class="ignored-method-name">Script_0061</span>
                 <br/>
-                <span class="ignored-method-name">Script_0110</span>
-                <br/>
                 <span class="ignored-method-name">Script_0077</span>
                 <br/>
-                <span class="ignored-method-name">Script_0112</span>
+                <span class="ignored-method-name">Script_0110</span>
                 <br/>
                 <span class="ignored-method-name">Script_0079</span>
                 <br/>
-                <span class="ignored-method-name">Script_0111</span>
+                <span class="ignored-method-name">Script_0112</span>
                 <br/>
                 <span class="ignored-method-name">Script_0078</span>
                 <br/>
+                <span class="ignored-method-name">Script_0111</span>
+                <br/>
                 <span class="ignored-method-name">Script_0073</span>
+                <br/>
+                <span class="ignored-method-name">Script_0113</span>
                 <br/>
                 <span class="ignored-method-name">Script_0075</span>
                 <br/>
@@ -418,25 +431,12 @@ return data;
                 <span class="ignored-method-name">Script_0087</span>
                 <br/>
                 <span class="ignored-method-name">Script_0009</span>
-=======
-            <span class="header-content">32 ignored methods</span>
-          </div> <!-- main-panel-header rounded-window-top -->
-          <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">test.Tests_BoletaExenta</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">Script_0031</span>
->>>>>>> 783df92ecd4f8bc1aba239966fa55fcbf4d143f0
                 <br/>
-                <span class="ignored-method-name">Script_0012</span>
+                <span class="ignored-method-name">Script_0004</span>
                 <br/>
-<<<<<<< HEAD
                 <span class="ignored-method-name">Script_0006</span>
                 <br/>
                 <span class="ignored-method-name">Script_0005</span>
-=======
-                <span class="ignored-method-name">Script_0034</span>
->>>>>>> 783df92ecd4f8bc1aba239966fa55fcbf4d143f0
                 <br/>
                 <span class="ignored-method-name">Script_0007</span>
                 <br/>
@@ -458,77 +458,19 @@ return data;
                 <br/>
                 <span class="ignored-method-name">Script_0019</span>
                 <br/>
-                <span class="ignored-method-name">Script_0098</span>
-                <br/>
                 <span class="ignored-method-name">Script_0010</span>
                 <br/>
-<<<<<<< HEAD
-                <span class="ignored-method-name">Script_0015</span>
+                <span class="ignored-method-name">Script_0098</span>
                 <br/>
                 <span class="ignored-method-name">Script_0018</span>
                 <br/>
                 <span class="ignored-method-name">Script_0091</span>
-=======
-                <span class="ignored-method-name">Script_0032</span>
-                <br/>
-                <span class="ignored-method-name">Script_0013</span>
-                <br/>
-                <span class="ignored-method-name">Script_0035</span>
-                <br/>
-                <span class="ignored-method-name">Script_0011</span>
-                <br/>
-                <span class="ignored-method-name">Script_0014</span>
-                <br/>
-                <span class="ignored-method-name">Script_0036</span>
-                <br/>
-                <span class="ignored-method-name">Script_0017</span>
-                <br/>
-                <span class="ignored-method-name">Script_0015</span>
-                <br/>
-                <span class="ignored-method-name">Script_0037</span>
-                <br/>
-                <span class="ignored-method-name">Script_0018</span>
-                <br/>
-                <span class="ignored-method-name">Script_0030</span>
-                <br/>
-                <span class="ignored-method-name">Script_0019</span>
-                <br/>
-                <span class="ignored-method-name">Script_0016</span>
-                <br/>
-                <span class="ignored-method-name">Script_0038</span>
-                <br/>
-                <span class="ignored-method-name">Script_0020</span>
-                <br/>
-                <span class="ignored-method-name">Script_0023</span>
-                <br/>
-                <span class="ignored-method-name">Script_0021</span>
-                <br/>
-                <span class="ignored-method-name">Script_0024</span>
-                <br/>
-                <span class="ignored-method-name">Script_0022</span>
-                <br/>
-                <span class="ignored-method-name">Script_0025</span>
->>>>>>> 783df92ecd4f8bc1aba239966fa55fcbf4d143f0
                 <br/>
                 <span class="ignored-method-name">Script_0093</span>
                 <br/>
                 <span class="ignored-method-name">Script_0092</span>
                 <br/>
                 <span class="ignored-method-name">Script_0094</span>
-                <br/>
-                <span class="ignored-method-name">Script_0028</span>
-                <br/>
-                <span class="ignored-method-name">Script_0004</span>
-                <br/>
-                <span class="ignored-method-name">Script_0026</span>
-                <br/>
-                <span class="ignored-method-name">Script_0007</span>
-                <br/>
-                <span class="ignored-method-name">Script_0029</span>
-                <br/>
-                <span class="ignored-method-name">Script_0005</span>
-                <br/>
-                <span class="ignored-method-name">Script_0027</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -540,29 +482,23 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-<<<<<<< HEAD
               <div class="chronological-class-name">test.Tests_FacturaExportacion</div> <!-- chronological-class-name -->
-=======
-              <div class="chronological-class-name">test.Tests_BoletaExenta</div> <!-- chronological-class-name -->
->>>>>>> 783df92ecd4f8bc1aba239966fa55fcbf4d143f0
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-<<<<<<< HEAD
-                <span class="method-name">Script_0113</span>
-                <span class="method-start">9706 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Script_0015</span>
+                <span class="method-start">7575 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">FinEjecucion</span>
-                <span class="method-start">141732 ms</span>
+                <span class="method-start">106040 ms</span>
               </div> <!-- configuration-method after -->
-=======
-                <span class="method-name">Script_0039</span>
-                <span class="method-start">6505 ms</span>
-              </div> <!-- test-method -->
->>>>>>> 783df92ecd4f8bc1aba239966fa55fcbf4d143f0
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

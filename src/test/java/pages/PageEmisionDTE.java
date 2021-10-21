@@ -110,7 +110,7 @@ public class PageEmisionDTE {
 				}
 			}
 		}while(i==0);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 	
 	
@@ -552,7 +552,7 @@ public class PageEmisionDTE {
 				}
 			}
 		}while(i==0);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 	
 	public void AgregarFolio (String caso, String folio) throws InterruptedException {
@@ -561,7 +561,7 @@ public class PageEmisionDTE {
 		do {
 			try {
 				driver.findElement(By.id("formEmitirdocumento_referenciafolio")).sendKeys(folio);
-				Thread.sleep(2000);
+				//Thread.sleep(2000);
 				
 				String texto ="Ingresar Folio";
 				log.modificarArchivoLog(caso,texto);
@@ -578,7 +578,7 @@ public class PageEmisionDTE {
 				}
 			}
 		}while(i==0);
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 	}
 	
 	public void FechaReferencia (String caso) throws InterruptedException {
@@ -589,7 +589,7 @@ public class PageEmisionDTE {
 				FechaActual fechaActual = new FechaActual();
 				String fecha = fechaActual.FechaHoy();
 				driver.findElement(By.id("formEmitirdocumento_referenciaFechaEmision")).sendKeys(fecha);
-				Thread.sleep(1000);
+				//Thread.sleep(1000);
 				String texto ="Ingreso Fecha Referencia";
 				log.modificarArchivoLog(caso,texto);
 				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
@@ -607,7 +607,7 @@ public class PageEmisionDTE {
 				}
 			}
 		}while(i==0);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 	
 	public void BtnAgregarReferencia (String caso) throws InterruptedException {
@@ -632,7 +632,7 @@ public class PageEmisionDTE {
 				}
 			}
 		}while(i==0);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 	
 	public void IngresarDatosOtroDocumento (String caso, String tipo, String nombre) throws InterruptedException {
@@ -714,7 +714,7 @@ public class PageEmisionDTE {
 				}
 			}
 		}while(i==0);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 	
 	public void IngresoDatosTransporte (String caso, String patente, String rut, String nombre, String direccion, String comuna, String region, String tipoDespacho) throws InterruptedException {
@@ -1946,7 +1946,7 @@ public class PageEmisionDTE {
 				}
 			}
 		}while(i==0);
-		Thread.sleep(5000);
+		Thread.sleep(1000);
 	}
 	
 	public void SeleccionarModalidadAduana (String caso, String opcion) throws InterruptedException {
@@ -1971,7 +1971,7 @@ public class PageEmisionDTE {
 				}
 			}
 		}while(i==0);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 	
 	public void SeleccionarClausulaAduana (String caso, String opcion) throws InterruptedException {
@@ -1996,7 +1996,7 @@ public class PageEmisionDTE {
 				}
 			}
 		}while(i==0);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 	
 	public void IngresoTotalAduana (String caso, String total) throws InterruptedException {
@@ -2190,11 +2190,11 @@ public class PageEmisionDTE {
 		do {
 			try {
 				driver.findElement(By.id("formEmitirdocumento_transporteDireccionDestino")).sendKeys(direccion);
-				Thread.sleep(1000);
+				//Thread.sleep(1000);
 				driver.findElement(By.id("formEmitirdocumento_transporteComuna")).sendKeys(comuna);
-				Thread.sleep(1000);
+				//Thread.sleep(1000);
 				driver.findElement(By.id("formEmitirdocumento_transporteCuidad")).sendKeys(comuna);
-				Thread.sleep(1000);
+				//Thread.sleep(1000);
 				
 				Select region2 = new Select (driver.findElement(By.id("formEmitirdocumento_transporteRegion")));
 				region2.selectByVisibleText(region);
@@ -2389,7 +2389,7 @@ public class PageEmisionDTE {
 				}
 			}
 		}while(i==0);
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
 	}
 	
 	
@@ -2420,7 +2420,7 @@ public class PageEmisionDTE {
 				}
 			}
 		}while(i==0);
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
 	}
 	
 	public void AgregarIndormacionBulto (String caso, String tipo, String cantidad, String marca) throws InterruptedException {
@@ -2496,4 +2496,5 @@ public class PageEmisionDTE {
 		}while(i==0);
 		Thread.sleep(3000);
 	}
+	
 }
