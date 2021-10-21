@@ -2638,8 +2638,5 @@ public class PageEmisionDTE {
 		Thread.sleep(3000);
 	}
 	
-<<<<<<< HEAD
-=======
 
->>>>>>> 34304d6cd4e8dc28cf2d77cc64ff1033539f95dc
 }
