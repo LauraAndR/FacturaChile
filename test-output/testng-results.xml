@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" ignored="102" total="103" passed="0">
   <reporter-output>
   </reporter-output>
@@ -146,6 +147,25 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- FinEjecucion -->
       </class> <!-- test.Tests_FacturaExportacion -->
+=======
+<testng-results ignored="19" total="20" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-10-20T22:00:00Z" name="Default suite" finished-at="2021-10-20T22:03:11Z" duration-ms="191128">
+    <groups>
+    </groups>
+    <test started-at="2021-10-20T22:00:00Z" name="Default test" finished-at="2021-10-20T22:03:11Z" duration-ms="191128">
+      <class name="test.Tests_NotaCreditoExportacion">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.Tests_NotaCreditoExportacion@4be29ed9]" started-at="2021-10-20T22:00:00Z" name="setUp" finished-at="2021-10-20T22:00:04Z" duration-ms="4345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Script_0079()[pri:0, instance:test.Tests_NotaCreditoExportacion@4be29ed9]" started-at="2021-10-20T22:00:04Z" name="Script_0079" finished-at="2021-10-20T22:03:11Z" duration-ms="186752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Script_0079 -->
+      </class> <!-- test.Tests_NotaCreditoExportacion -->
+>>>>>>> 34304d6cd4e8dc28cf2d77cc64ff1033539f95dc
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

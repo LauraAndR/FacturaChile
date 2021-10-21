@@ -67,7 +67,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -128,7 +128,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -190,7 +190,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -251,7 +251,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -312,7 +312,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -373,7 +373,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -434,7 +434,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -496,7 +496,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -558,7 +558,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -620,7 +620,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -682,7 +682,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -744,7 +744,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -806,7 +806,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -868,7 +868,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -930,7 +930,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -992,7 +992,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -1054,7 +1054,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -1116,7 +1116,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -1178,7 +1178,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -1242,7 +1242,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -1304,7 +1304,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -1366,7 +1366,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -1427,7 +1427,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -1491,7 +1491,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -1556,7 +1556,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -1619,7 +1619,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -1684,7 +1684,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -1746,7 +1746,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -1825,7 +1825,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -1904,7 +1904,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -1983,7 +1983,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -2063,7 +2063,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");
@@ -2154,7 +2154,7 @@ public class Tests_BoletaExenta {
 		crearLogyDocumento.CrearEvidencias(cp);
 		
 		pageLoginAdm.ClickIngresarLogin(cp);
-		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RUTH, Configuration.PASS_RUTH);
+		pageLoginAdm.LoginIdentidadDigital(cp, Configuration.USER_RICARDO, Configuration.PASS_RICARDO);
 		
 		PageEscritorio pageEscritorio = new PageEscritorio(driver);
 		pageEscritorio.BarraMenu(cp, "Emisión DTE");

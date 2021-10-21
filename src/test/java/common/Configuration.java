@@ -21,8 +21,14 @@ public class Configuration {
 	/*
 	 * USUARIOS
 	 */
-	public static String USER_RUTH = "13712759-8";
-	public static String PASS_RUTH = "Verity6.0";
+	public static String USER_RUTH = "16390156-0";
+	public static String PASS_RUTH = "soledad.21";
+	
+	public static String USER_BENJA = "16390156-0";
+	public static String PASS_BENJA = "soledad.21";
+	
+	public static String USER_NELIDA = "7389172-8";
+	public static String PASS_NELIDA = "123456cC.";
 	
 	public static String USER_RICARDO = "18215678-7";
 	public static String PASS_RICARDO = "Verity5.0";

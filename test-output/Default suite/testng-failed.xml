@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="test.Tests_FacturaExportacion">
         <methods>
           <include name="setUp"/>
@@ -10,6 +11,14 @@
           <include name="Script_0015"/>
         </methods>
       </class> <!-- test.Tests_FacturaExportacion -->
+=======
+      <class name="test.Tests_NotaCreditoExportacion">
+        <methods>
+          <include name="Script_0077"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.Tests_NotaCreditoExportacion -->
+>>>>>>> 34304d6cd4e8dc28cf2d77cc64ff1033539f95dc
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

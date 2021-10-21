@@ -73,6 +73,33 @@ public class PageEscritorio {
 		Thread.sleep(4000);
 	}
 	
+	public void menuEmisionIndividual (String caso, String especificacion) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				
+				driver.findElement(By.xpath("//*[@id=\"panel-lis-ul\"]/li[5]/ul/li[3]/a")).click();
+				Thread.sleep(1000);          
+				driver.findElement(By.xpath("//*[text()= '"+ especificacion + "']")).click();//para enviar un texto a un campo y lo puedan seleccionar
+				Thread.sleep(1000); 
+				String texto ="Seleccion Emision Individual";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible seleccionar Emision Individual");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(2000);
+	}
 	
 	public void SeleccionarTipoDocumento (String caso, String opcion) throws InterruptedException {
 		int i=0;
@@ -98,6 +125,8 @@ public class PageEscritorio {
 		}while(i==0);
 		Thread.sleep(2000);
 	}
+	
+	
 	
 	public void ClickCubo (String caso) throws InterruptedException {
 		int i=0;

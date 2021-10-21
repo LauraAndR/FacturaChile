@@ -12,15 +12,3 @@ Ingresar Producto
 Clic botón Agregar Transporte
 Ingresar datos de transporte
 Clic botón Agregar Aduana
-Seleccion Modalidad
-Seleccion cláusula
-Ingresar Total
-Ingresar país receptor
-Ingresar país receptor
-Ingresar país receptor
-Seleccion Vía
-Ingresar Información de bulto
-Ingresar Total
-Ingresar país receptor
-Clic botón Emitir Guia de Despacho
-Caso OK
