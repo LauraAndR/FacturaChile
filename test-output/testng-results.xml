@@ -1,45 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results skipped="0" failed="0" ignored="102" total="103" passed="1">
+<testng-results ignored="19" total="20" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="141855" started-at="2021-10-14T14:36:12Z" finished-at="2021-10-14T14:38:34Z">
+  <suite started-at="2021-10-20T22:00:00Z" name="Default suite" finished-at="2021-10-20T22:03:11Z" duration-ms="191128">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="141855" started-at="2021-10-14T14:36:12Z" finished-at="2021-10-14T14:38:34Z">
-      <class name="test.Tests_FacturaExportacion">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.Tests_FacturaExportacion@e50a6f6]" name="setUp" is-config="true" duration-ms="9706" started-at="2021-10-14T14:36:12Z" finished-at="2021-10-14T14:36:22Z">
+    <test started-at="2021-10-20T22:00:00Z" name="Default test" finished-at="2021-10-20T22:03:11Z" duration-ms="191128">
+      <class name="test.Tests_NotaCreditoExportacion">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.Tests_NotaCreditoExportacion@4be29ed9]" started-at="2021-10-20T22:00:00Z" name="setUp" finished-at="2021-10-20T22:00:04Z" duration-ms="4345" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="Script_0113()[pri:0, instance:test.Tests_FacturaExportacion@e50a6f6]" name="Script_0113" duration-ms="132025" started-at="2021-10-14T14:36:22Z" finished-at="2021-10-14T14:38:34Z">
+        <test-method signature="Script_0079()[pri:0, instance:test.Tests_NotaCreditoExportacion@4be29ed9]" started-at="2021-10-20T22:00:04Z" name="Script_0079" finished-at="2021-10-20T22:03:11Z" duration-ms="186752" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Script_0113 -->
-        <test-method status="PASS" signature="FinEjecucion()[pri:0, instance:test.Tests_FacturaExportacion@e50a6f6]" name="FinEjecucion" is-config="true" duration-ms="91" started-at="2021-10-14T14:38:34Z" finished-at="2021-10-14T14:38:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FinEjecucion -->
-      </class> <!-- test.Tests_FacturaExportacion -->
-=======
-<testng-results ignored="32" total="33" passed="1" failed="0" skipped="0">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2021-10-08T18:46:10Z" name="Default suite" finished-at="2021-10-08T18:47:35Z" duration-ms="85330">
-    <groups>
-    </groups>
-    <test started-at="2021-10-08T18:46:10Z" name="Default test" finished-at="2021-10-08T18:47:35Z" duration-ms="85330">
-      <class name="test.Tests_BoletaExenta">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.Tests_BoletaExenta@79e4c792]" started-at="2021-10-08T18:46:10Z" name="setUp" finished-at="2021-10-08T18:46:16Z" duration-ms="6505" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="Script_0039()[pri:0, instance:test.Tests_BoletaExenta@79e4c792]" started-at="2021-10-08T18:46:16Z" name="Script_0039" finished-at="2021-10-08T18:47:35Z" duration-ms="78792" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Script_0039 -->
-      </class> <!-- test.Tests_BoletaExenta -->
->>>>>>> 783df92ecd4f8bc1aba239966fa55fcbf4d143f0
+        </test-method> <!-- Script_0079 -->
+      </class> <!-- test.Tests_NotaCreditoExportacion -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

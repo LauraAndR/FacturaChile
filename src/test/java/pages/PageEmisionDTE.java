@@ -554,6 +554,31 @@ public class PageEmisionDTE {
 		}while(i==0);
 		Thread.sleep(2000);
 	}
+	public void AgregarCodReferencia (String caso, String codReferencia) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.id("formEmitirdocumento_CodRef")).sendKeys(codReferencia);
+				Thread.sleep(2000);
+				
+				String texto ="Ingresar Código de Referencia";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Ingresar Código de Referencia");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(3000);
+	}
 	
 	public void AgregarFolio (String caso, String folio) throws InterruptedException {
 		int i=0;
@@ -1381,6 +1406,37 @@ public class PageEmisionDTE {
 		Thread.sleep(2000);
 	}
 	
+	public void AgregarReferenciaNCExp (String caso, String folio, String ref) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.xpath("//*[@id=\"formEmitirdocumento_referenciaTipodoc\"]/option[3]")).click();
+				Thread.sleep(1000);        
+				driver.findElement(By.xpath("//*[@id=\"formEmitirdocumento_CodRef\"]/option[3]")).click();
+				Thread.sleep(1000); 
+				driver.findElement(By.id("formEmitirdocumento_referenciafolio")).sendKeys(folio);
+				Thread.sleep(1000);
+				driver.findElement(By.id("formEmitirdocumento_referenciaRazonReferencia")).sendKeys(ref);
+				Thread.sleep(1000);
+				String texto ="Ingresar Referencia";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible ingresar Referencia");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(2000);
+	}
+	
 	public void estadoEspecificacion (String caso, String especificacion) throws InterruptedException {
 		int i=0;
 		int j=0;
@@ -1949,6 +2005,31 @@ public class PageEmisionDTE {
 		Thread.sleep(5000);
 	}
 	
+	public void BtnAgregarBulto(String caso) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.id("add_bultoAduana")).click();
+				
+				String texto ="Clic botón Agregar Bulto";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible hacer clic botón Agregar Bulto");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(5000);
+	}
+	
 	public void SeleccionarModalidadAduana (String caso, String opcion) throws InterruptedException {
 		int i=0;
 		int j=0;
@@ -2222,6 +2303,33 @@ public class PageEmisionDTE {
 		Thread.sleep(1000);
 	}
 	
+	public void IngresoPaisDestino (String caso, String pais) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.id("select2-formEmitirdocumento_CodPaisDestin-container")).click();
+				
+				driver.findElement(By.xpath("/html/body/span/span/span[1]/input")).sendKeys(pais);
+				driver.findElement(By.xpath("/html/body/span/span/span[1]/input")).sendKeys(Keys.chord(Keys.ENTER));
+				
+				String texto ="Ingresar país destino";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Ingresar país destino");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(1000);
+	}
 	
 	public void IngresoPaisReceptor (String caso, String pais) throws InterruptedException {
 		int i=0;
@@ -2320,6 +2428,39 @@ public class PageEmisionDTE {
 				Thread.sleep(1000);
 				
 				driver.findElement(By.id("btn_addTogridExport")).click();
+				
+				String texto ="Ingresar Producto";
+				log.modificarArchivoLog(caso,texto);
+				crearDocEvidencia.modificarArchivoEvidencia(caso,texto);
+				texto=texto.replace(" ","_");
+				capturaPantalla.takeScreenShotTest(driver,texto, caso);
+				i=1;
+			}catch (Exception e) {
+				// TODO: handle exception
+				j++;
+				if(j==3) {
+					System.out.println("No fue posible Ingresar Producto");
+					i=1;
+				}
+			}
+		}while(i==0);
+		Thread.sleep(1000);
+	}
+	
+	public void AgregarProductoExportaciónLimpiar (String caso, String codigo, String cant) throws InterruptedException {
+		int i=0;
+		int j=0;
+		do {
+			try {
+				driver.findElement(By.id("txt_codpro")).sendKeys(codigo);
+				Thread.sleep(1000);
+				driver.findElement(By.id("txt_codpro")).sendKeys(Keys.TAB);
+				Thread.sleep(6000);
+				
+				driver.findElement(By.id("txt_cantprod")).sendKeys(cant);
+				Thread.sleep(1000);
+				
+				//driver.findElement(By.id("btn_addTogridExport")).click();
 				
 				String texto ="Ingresar Producto";
 				log.modificarArchivoLog(caso,texto);
@@ -2496,4 +2637,6 @@ public class PageEmisionDTE {
 		}while(i==0);
 		Thread.sleep(3000);
 	}
+	
+
 }

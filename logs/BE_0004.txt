@@ -1,3 +1,6 @@
 Log de Caso de Prueba BE_0004
 Login por Identidad Digital
 Click al botón Autorizar
+Seleccionar Opcion de Menú
+Seleccion Tipo Documento
+Ingreso Fecha Desde
